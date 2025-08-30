@@ -3,7 +3,7 @@
 
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/lib/firebase/config";
-import { addUser, toggleUserActiveStatus, getAllUsers, deleteUser, getUserByEmail, setUserData } from '@/lib/data/users';
+import { toggleUserActiveStatus, getAllUsers, deleteUser, getUserByEmail, setUserData } from '@/lib/data/users';
 import type { User } from '@/lib/data/users';
 
 export async function verifyUserInSheet(email: string, password: string): Promise<{ success: boolean; course?: string; name?: string; email?: string, role?: 'admin' | 'user', active?: boolean }> {
@@ -14,24 +14,16 @@ export async function verifyUserInSheet(email: string, password: string): Promis
     return { success: false };
 }
 
-export async function addUserToSheet(name: string, email: string, password: string, course: string, role: 'admin' | 'user') {
+export async function addUserToSheet(name: string, email: string, course: string, role: 'admin' | 'user') {
     try {
-        // Create user in Firebase Authentication
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        const user = userCredential.user;
-
-        // Now save user details to Firestore, but without the password
-        const newUser: User = { name, email, password, course, role, active: true };
-        await setUserData(newUser); // Using setUserData to ensure document is created with email as ID.
-
-        console.log("User added to Firebase Auth and Firestore:", { uid: user.uid, email: user.email });
+        // This function now only saves the user data to Firestore.
+        // Authentication is handled on the client-side in the admin page.
+        const newUser: User = { name, email, course, role, active: true };
+        await setUserData(newUser); 
+        console.log("User data saved to Firestore:", { email });
     } catch (error: any) {
-        console.error("Error creating user:", error);
-        // It's good practice to handle specific Firebase error codes
-        if (error.code === 'auth/email-already-in-use') {
-            throw new Error('This email address is already in use by another account.');
-        }
-        throw new Error(error.message || "An unknown error occurred during user creation.");
+        console.error("Error saving user to Firestore:", error);
+        throw new Error(error.message || "An unknown error occurred while saving user data.");
     }
 }
 
