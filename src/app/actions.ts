@@ -6,7 +6,7 @@ import { auth } from "@/lib/firebase/config";
 import { addUser, toggleUserActiveStatus, getAllUsers, deleteUser, getUserByEmail, setUserData } from '@/lib/data/users';
 import type { User } from '@/lib/data/users';
 
-export async function verifyUserInSheet(email: string, password: string): Promise<{ success: boolean; course?: string; name?: string; email?: string, role?: string, active?: boolean }> {
+export async function verifyUserInSheet(email: string, password: string): Promise<{ success: boolean; course?: string; name?: string; email?: string, role?: 'admin' | 'user', active?: boolean }> {
     const user = await getUserByEmail(email);
     if (user && user.password === password) {
         return { success: true, name: user.name, email: user.email, course: user.course, role: user.role, active: user.active };
