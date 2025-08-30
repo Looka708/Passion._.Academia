@@ -80,19 +80,21 @@ export default function AdminPage() {
             
             // Step 2: Call the server action to save user data to Firestore
             const role = 'user';
-            await addUserToSheet(newUserName, newUserEmail, newUserCourse, role);
+            const newUser = await addUserToSheet(newUserName, newUserEmail, newUserCourse, role);
 
             toast({
                 title: "User Created",
                 description: `Successfully created user ${newUserName}.`,
             });
+            
+            // Update the local state to show the new user immediately
+            setUsers(prevUsers => [...prevUsers, newUser]);
 
-            // Reset form and reload users
+            // Reset form
             setNewUserName('');
             setNewUserEmail('');
             setNewUserPassword('');
             setNewUserCourse('');
-            loadUsers();
         } catch (error: any) {
             console.error("Error creating user:", error);
             const errorMessage = error.code === 'auth/email-already-in-use' 

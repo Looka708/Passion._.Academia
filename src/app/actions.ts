@@ -14,13 +14,12 @@ export async function verifyUserInSheet(email: string, password: string): Promis
     return { success: false };
 }
 
-export async function addUserToSheet(name: string, email: string, course: string, role: 'admin' | 'user') {
+export async function addUserToSheet(name: string, email: string, course: string, role: 'admin' | 'user'): Promise<User> {
     try {
-        // This function now only saves the user data to Firestore.
-        // Authentication is handled on the client-side in the admin page.
         const newUser: User = { name, email, course, role, active: true };
         await setUserData(newUser); 
         console.log("User data saved to Firestore:", { email });
+        return newUser;
     } catch (error: any) {
         console.error("Error saving user to Firestore:", error);
         throw new Error(error.message || "An unknown error occurred while saving user data.");
