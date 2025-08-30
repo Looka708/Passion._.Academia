@@ -74,7 +74,7 @@ export default function AdminPage() {
             await addUserToSheet(newUserName, newUserEmail, newUserPassword, newUserCourse, role);
             toast({
                 title: "User Created",
-                description: `Successfully created user ${newUserName}. This user is stored in-memory and will be lost on server restart.`,
+                description: `Successfully created user ${newUserName}.`,
             });
             setNewUserName('');
             setNewUserEmail('');
@@ -133,7 +133,7 @@ export default function AdminPage() {
                 <CardHeader>
                     <CardTitle>Create New User</CardTitle>
                     <CardDescription>
-                        Create a new student account. The account is stored in-memory and will be cleared on server restart.
+                        Create a new student account. The user will be added to Firebase Authentication and their data stored in Firestore.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>

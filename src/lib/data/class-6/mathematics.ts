@@ -5,7 +5,7 @@ export const chapters = [
   "Factors and Multiples",
   "Integers",
   "Laws of Integers",
-  "Rate, Ratio and Percentage",
+  "Rate Ratio and Percentage",
   "Sets",
   "Algebraic Expressions",
   "Linear Expression and Equations",
@@ -172,7 +172,7 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 48, "questionText": "Simplify: (-40) - (-26)", "options": ["-14", "14", "-66", "66"], "correctAnswer": "-14" },
     { "id": 49, "questionText": "The value of -10 × (-7 + 13) using the associative law is:", "options": ["-200", "200", "-60", "60"], "correctAnswer": "-60" }
   ],
-  "Rate, Ratio and Percentage": [
+  "Rate Ratio and Percentage": [
     { "id": 1, "questionText": "A ratio is a numerical comparison between:", "options": ["Two quantities of different kinds", "Two quantities of the same kind", "More than two quantities", "Quantities with different units"], "correctAnswer": "Two quantities of the same kind" },
     { "id": 2, "questionText": "The first term in a ratio is called the:", "options": ["Consequent", "Antecedent", "Proportion", "Percentage"], "correctAnswer": "Antecedent" },
     { "id": 3, "questionText": "The ratio 7:9 can also be expressed as a fraction:", "options": ["9/7", "7/9", "7/16", "9/16"], "correctAnswer": "7/9" },

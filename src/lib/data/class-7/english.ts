@@ -4,7 +4,7 @@ import { MCQ } from '@/lib/types';
 export const chapters: string[] = [
     "The Last Sermon of Rasoolullah",
     "Martyrs of Pakistan",
-    "A Nation's Strength",
+    "A Nations Strength",
     "Quaid-e-Azam",
     "Smog",
     "Pakistani Female Mountaineer",
@@ -121,7 +121,7 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 49, "questionText": "What is the primary characteristic of those who display \"matchless courage to defend our country\"?", "options": ["They are wealthy.", "They are famous.", "They are military heroes.", "They are politicians."], "correctAnswer": "They are military heroes." },
     { "id": 50, "questionText": "What does Unit 2 emphasize about Rashid Minhas's action?", "options": ["It was a simple accident.", "It was an act of despair.", "It was a deliberately executed act for the honour of his motherland.", "It was an attempt to save himself."], "correctAnswer": "It was a deliberately executed act for the honour of his motherland." }
   ],
-  "A Nation's Strength": [
+  "A Nations Strength": [
     { "id": 1, "questionText": "What is the title of the poem in Unit 3?", "options": ["The Strength of Gold", "Brave Men", "A Nation's Strength", "Pillars of Truth"], "correctAnswer": "A Nation's Strength" },
     { "id": 2, "questionText": "Who is the author of the poem \"A Nation's Strength\"?", "options": ["Robert Frost", "John Keats", "William Ralph Emerson", "William Wordsworth"], "correctAnswer": "William Ralph Emerson" },
     { "id": 3, "questionText": "According to the poem, what makes a nation's \"pillars deep\"?", "options": ["Its gold and treasure", "Its grand kingdoms", "Men who for truth and honour's sake, stand fast and suffer long.", "Its military strength"], "correctAnswer": "Men who for truth and honour's sake, stand fast and suffer long." },

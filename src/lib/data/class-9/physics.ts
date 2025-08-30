@@ -5,7 +5,7 @@ export const chapters = [
   "Physical Quantities and Measurements",
   "Kinematics",
   "Dynamics",
-  "Turning Effects of Force",
+  "Turning Effects of Forces",
   "Work Energy and Power",
   "Mechanical Properties of Matter",
   "Thermal Properties of Matter",
@@ -14,7 +14,7 @@ export const chapters = [
 ];
 
 export const mcqs: Record<string, MCQ[]> = {
-  "Physical Quantities and Measurement": [
+  "Physical Quantities and Measurements": [
   {
     "id": 1,
     "questionText": "Which of the following is not a physical quantity?",
@@ -1538,7 +1538,7 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "c) With a smaller speed in the opposite direction"
   }
 ],
-  "Turning Effect of Forces": [
+  "Turning Effects of Forces": [
   {
     "id": 1,
     "questionText": "Forces that are acting in the same direction and are parallel to one another are called:",

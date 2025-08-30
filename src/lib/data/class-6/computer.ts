@@ -168,6 +168,558 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 49, "questionText": "What is the purpose of 'Reply to all' in an email?", "options": ["To send a private response to the sender.", "To forward the email to new recipients.", "To send a response to the original sender and all other recipients of the email.", "To delete the email."], "correctAnswer": "To send a response to the original sender and all other recipients of the email." },
     { "id": 50, "questionText": "Email authentication is a technical solution to verify that an email is not forged. In other words, it provides us with a way to authenticate that an email comes from who it claims to be from. Email authentication is most often used to block harmful or fraudulent uses of email such as:", "options": ["Legitimate marketing emails", "Important updates", "Spam", "Personal communication"], "correctAnswer": "Spam" }
   ],
+  "Algorithmic Thinking": [
+  {
+    "id": 1,
+    "questionText": "What is the first step in solving a problem efficiently?",
+    "options": [
+      "Problem Analysis",
+      "Planning Solution",
+      "Identify Problem",
+      "Test the Solution"
+    ],
+    "correctAnswer": "Identify Problem"
+  },
+  {
+    "id": 2,
+    "questionText": "What is Problem Definition?",
+    "options": [
+      "The process of finding the problem.",
+      "A precise statement that describes the problem that needs to be solved.",
+      "The step where you implement the solution.",
+      "Identifying the inputs and outputs."
+    ],
+    "correctAnswer": "A precise statement that describes the problem that needs to be solved."
+  },
+  {
+    "id": 3,
+    "questionText": "What is the next step after Problem Definition in problem-solving?",
+    "options": [
+      "Planning Solution",
+      "Test the Solution",
+      "Problem Analysis",
+      "Identify Problem"
+    ],
+    "correctAnswer": "Problem Analysis"
+  },
+  {
+    "id": 4,
+    "questionText": "Problem Analysis involves:",
+    "options": [
+      "Identifying the problem statement only.",
+      "Defining and decomposing a problem, and identifying inputs, outputs, and processes.",
+      "Testing the solution.",
+      "Planning the solution steps."
+    ],
+    "correctAnswer": "Defining and decomposing a problem, and identifying inputs, outputs, and processes."
+  },
+  {
+    "id": 5,
+    "questionText": "What is Decomposition of a problem?",
+    "options": [
+      "Ignoring complex parts of the problem.",
+      "Taking a big problem and breaking it down into a set of smaller problems.",
+      "Solving the problem immediately.",
+      "Combining multiple problems into one."
+    ],
+    "correctAnswer": "Taking a big problem and breaking it down into a set of smaller problems."
+  },
+  {
+    "id": 6,
+    "questionText": "In problem analysis, what does \"5 W's\" refer to?",
+    "options": [
+      "What, When, Where, Who, Why",
+      "Which, What, When, Where, Why",
+      "What, When, Where, Who, Why",
+      "Who, What, When, Where, With"
+    ],
+    "correctAnswer": "What, When, Where, Who, Why"
+  },
+  {
+    "id": 7,
+    "questionText": "What is the main goal of \"Planning Solution\"?",
+    "options": [
+      "To find out what is required.",
+      "To identify available solutions.",
+      "To minimize risk of failure and ensures that you have everything you need.",
+      "To test the problem."
+    ],
+    "correctAnswer": "To minimize risk of failure and ensures that you have everything you need."
+  },
+  {
+    "id": 8,
+    "questionText": "Which factor is considered when selecting a solution during \"Testing and selecting best solution\"?",
+    "options": [
+      "Cost of implementation",
+      "Time to implement",
+      "Difficulty level",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above"
+  },
+  {
+    "id": 9,
+    "questionText": "A problem that can be solved in simple steps is considered:",
+    "options": [
+      "Complex problem",
+      "Algorithmic problem",
+      "Easy problem",
+      "Decomposition problem"
+    ],
+    "correctAnswer": "Easy problem"
+  },
+  {
+    "id": 10,
+    "questionText": "Drawing a car or finding the area of an irregular shape are examples of:",
+    "options": [
+      "Simple problems",
+      "Complex problems",
+      "Algorithmic problems",
+      "Deconstructed problems"
+    ],
+    "correctAnswer": "Complex problems"
+  },
+  {
+    "id": 11,
+    "questionText": "What is Computational Thinking?",
+    "options": [
+      "A method to solve only mathematical problems.",
+      "A way of getting to a solution through the clear definition of the steps needed to solve a problem.",
+      "Thinking like a computer.",
+      "A method to avoid problem-solving."
+    ],
+    "correctAnswer": "A way of getting to a solution through the clear definition of the steps needed to solve a problem."
+  },
+  {
+    "id": 12,
+    "questionText": "Computational thinking involves which of the following?",
+    "options": [
+      "Only Algorithmic design",
+      "Only Decomposition",
+      "Decomposition, Pattern recognition, Abstraction, and Algorithmic design",
+      "Only Problem analysis"
+    ],
+    "correctAnswer": "Decomposition, Pattern recognition, Abstraction, and Algorithmic design"
+  },
+  {
+    "id": 13,
+    "questionText": "What is \"Decomposition\" in Computational Thinking?",
+    "options": [
+      "Looking for similarities",
+      "Ignoring irrelevant detail",
+      "Breaking down complicated problems into smaller problems",
+      "Adapting solutions to other problems"
+    ],
+    "correctAnswer": "Breaking down complicated problems into smaller problems"
+  },
+  {
+    "id": 14,
+    "questionText": "\"Looking for similarities between and within problems\" is related to:",
+    "options": [
+      "Decomposition",
+      "Abstraction",
+      "Algorithmic design",
+      "Pattern Recognition"
+    ],
+    "correctAnswer": "Pattern Recognition"
+  },
+  {
+    "id": 15,
+    "questionText": "What is \"Abstraction\" in Computational Thinking?",
+    "options": [
+      "Breaking down a problem.",
+      "Finding patterns.",
+      "Taking out the detail of a problem and ignoring irrelevant information.",
+      "Creating a step-by-step solution."
+    ],
+    "correctAnswer": "Taking out the detail of a problem and ignoring irrelevant information."
+  },
+  {
+    "id": 16,
+    "questionText": "\"Simple rules to follow that solve the problem\" refers to:",
+    "options": [
+      "Decomposition",
+      "Pattern Recognition",
+      "Abstraction",
+      "Algorithmic design"
+    ],
+    "correctAnswer": "Algorithmic design"
+  },
+  {
+    "id": 17,
+    "questionText": "Algorithmic thinking improves the confidence in:",
+    "options": [
+      "Problem identification",
+      "Problem analysis",
+      "Decision making",
+      "Solution testing"
+    ],
+    "correctAnswer": "Decision making"
+  },
+  {
+    "id": 18,
+    "questionText": "An algorithm is a finite sequence of instructions used to solve:",
+    "options": [
+      "Any problem without specific task",
+      "Only mathematical calculations",
+      "A specific problem or to perform a specific task",
+      "General tasks only"
+    ],
+    "correctAnswer": "A specific problem or to perform a specific task"
+  },
+  {
+    "id": 19,
+    "questionText": "Which type of flow executes instructions in the same written order?",
+    "options": [
+      "Conditional flow",
+      "Repetitive flow",
+      "Sequential flow",
+      "Random flow"
+    ],
+    "correctAnswer": "Sequential flow"
+  },
+  {
+    "id": 20,
+    "questionText": "What is the first step in the algorithm \"Algorithm to make a tea\"?",
+    "options": [
+      "Fill the kettle with water",
+      "Put the tea leaves in the kettle",
+      "Start",
+      "Boil the water in the kettle"
+    ],
+    "correctAnswer": "Start"
+  },
+  {
+    "id": 21,
+    "questionText": "What flow allows steps to be executed only if a condition is true, otherwise the next step is executed?",
+    "options": [
+      "Sequential flow",
+      "Repetitive flow",
+      "Conditional flow",
+      "Iterative flow"
+    ],
+    "correctAnswer": "Conditional flow"
+  },
+  {
+    "id": 22,
+    "questionText": "In the algorithm \"Algorithm to print greater number from two numbers\", what is Step 3?",
+    "options": [
+      "Input two numbers A and B",
+      "Print A is greater than B",
+      "Check if A is greater than B then go to step 4 otherwise go to step 5",
+      "Print B is greater than A"
+    ],
+    "correctAnswer": "Check if A is greater than B then go to step 4 otherwise go to step 5"
+  },
+  {
+    "id": 23,
+    "questionText": "What flow is also referred to as iterative flow?",
+    "options": [
+      "Sequential flow",
+      "Conditional flow",
+      "Repetitive flow",
+      "Looping flow"
+    ],
+    "correctAnswer": "Repetitive flow"
+  },
+  {
+    "id": 24,
+    "questionText": "In repetitive flow, a process with a set of statements is executed:",
+    "options": [
+      "Only once",
+      "When a condition is false",
+      "Again and again until a certain condition remains true",
+      "Only if there are no errors"
+    ],
+    "correctAnswer": "Again and again until a certain condition remains true"
+  },
+  {
+    "id": 25,
+    "questionText": "What is the final step in the algorithm \"Algorithm to print table of given Number up to 10\"?",
+    "options": [
+      "Start",
+      "Input a Number A",
+      "Stop",
+      "Print variable A"
+    ],
+    "correctAnswer": "Stop"
+  },
+  {
+    "id": 26,
+    "questionText": "Which problem-solving step includes defining and identifying the problem, and understanding its objectives?",
+    "options": [
+      "Problem Analysis",
+      "Planning Solution",
+      "Identify Problem",
+      "Test the Solution"
+    ],
+    "correctAnswer": "Problem Analysis"
+  },
+  {
+    "id": 27,
+    "questionText": "What is the main purpose of problem analysis?",
+    "options": [
+      "To skip directly to the solution.",
+      "To understand the problem in depth and identify its inputs, outputs, and processes.",
+      "To implement the solution without planning.",
+      "To choose the best solution from multiple options."
+    ],
+    "correctAnswer": "To understand the problem in depth and identify its inputs, outputs, and processes."
+  },
+  {
+    "id": 28,
+    "questionText": "The statement \"A problem is clearly defined if it does not contain any ambiguity\" refers to:",
+    "options": [
+      "Problem Analysis",
+      "Planning Solution",
+      "Defining a Problem",
+      "Testing Solution"
+    ],
+    "correctAnswer": "Defining a Problem"
+  },
+  {
+    "id": 29,
+    "questionText": "What is a key benefit of Algorithmic Thinking?",
+    "options": [
+      "It makes problems more complex.",
+      "It promotes random problem-solving.",
+      "It provides a unique way to solve problems and design new and improved systems.",
+      "It is only applicable to mathematical problems."
+    ],
+    "correctAnswer": "It provides a unique way to solve problems and design new and improved systems."
+  },
+  {
+    "id": 30,
+    "questionText": "In Computational Thinking, what does \"Generalization\" refer to?",
+    "options": [
+      "Breaking down problems.",
+      "Taking out irrelevant information.",
+      "Identifying sequence of operations that are common among specific problems and extending them to the general problems.",
+      "Creating step-by-step instructions."
+    ],
+    "correctAnswer": "Identifying sequence of operations that are common among specific problems and extending them to the general problems."
+  },
+  {
+    "id": 31,
+    "questionText": "An algorithm for \"take a number from user and it will print Car if number is 1 otherwise print Bus\" uses what kind of flow?",
+    "options": [
+      "Sequential",
+      "Repetitive",
+      "Conditional",
+      "Iterative"
+    ],
+    "correctAnswer": "Conditional"
+  },
+  {
+    "id": 32,
+    "questionText": "What determines whether an algorithm will continue or stop in a repetitive flow?",
+    "options": [
+      "The number of steps.",
+      "A certain condition remaining true.",
+      "The complexity of the problem.",
+      "The type of input."
+    ],
+    "correctAnswer": "A certain condition remaining true."
+  },
+  {
+    "id": 33,
+    "questionText": "When solving a maze, the source, intermediate steps, and destination need to be identified during which step?",
+    "options": [
+      "Planning solution",
+      "Problem analysis",
+      "Problem definition",
+      "Testing solution"
+    ],
+    "correctAnswer": "Problem analysis"
+  },
+  {
+    "id": 34,
+    "questionText": "Why is it important to \"test the solution\" in problem-solving?",
+    "options": [
+      "To find a new problem.",
+      "To make the problem more complex.",
+      "To verify that the solution works as intended and is correct.",
+      "To add more features to the solution."
+    ],
+    "correctAnswer": "To verify that the solution works as intended and is correct."
+  },
+  {
+    "id": 35,
+    "questionText": "The concept of \"ONE NATION, ONE CURRICULUM\" in the source relates to:",
+    "options": [
+      "Digital Skills development",
+      "Algorithmic Thinking principles",
+      "Standardized educational content",
+      "Programming languages"
+    ],
+    "correctAnswer": "Standardized educational content"
+  },
+  {
+    "id": 36,
+    "questionText": "\"What is given – facts\" is part of identifying which aspect of a problem?",
+    "options": [
+      "Process",
+      "Output",
+      "Input",
+      "Goal"
+    ],
+    "correctAnswer": "Input"
+  },
+  {
+    "id": 37,
+    "questionText": "\"Specific instruction (Process)\" refers to:",
+    "options": [
+      "The problem statement.",
+      "The final result.",
+      "The steps required to solve the problem.",
+      "The data needed."
+    ],
+    "correctAnswer": "The steps required to solve the problem."
+  },
+  {
+    "id": 38,
+    "questionText": "The example of making a tea is used to illustrate which type of algorithm flow?",
+    "options": [
+      "Conditional flow",
+      "Repetitive flow",
+      "Sequential flow",
+      "Branching flow"
+    ],
+    "correctAnswer": "Sequential flow"
+  },
+  {
+    "id": 39,
+    "questionText": "What is the primary purpose of identifying advantages and disadvantages in the problem-solving process?",
+    "options": [
+      "To complicate the problem further.",
+      "To ignore certain solutions.",
+      "To evaluate and choose the best available solution.",
+      "To redefine the problem statement."
+    ],
+    "correctAnswer": "To evaluate and choose the best available solution."
+  },
+  {
+    "id": 40,
+    "questionText": "What is \"Non-specific instructions\" in the context of identifying problems?",
+    "options": [
+      "Instructions that are very clear.",
+      "Instructions that are directly supported by data.",
+      "Instructions that are not detailed or precise enough.",
+      "Instructions that are only for complex problems."
+    ],
+    "correctAnswer": "Instructions that are not detailed or precise enough."
+  },
+  {
+    "id": 41,
+    "questionText": "If a problem is clearly defined, it:",
+    "options": [
+      "Is always easy to solve.",
+      "Does not contain any ambiguity.",
+      "Requires complex algorithms.",
+      "Must be deconstructed."
+    ],
+    "correctAnswer": "Does not contain any ambiguity."
+  },
+  {
+    "id": 42,
+    "questionText": "What does \"output: output the answer\" refer to in problem definition?",
+    "options": [
+      "The input data.",
+      "The steps to solve the problem.",
+      "The desired result or outcome.",
+      "The problem statement itself."
+    ],
+    "correctAnswer": "The desired result or outcome."
+  },
+  {
+    "id": 43,
+    "questionText": "Which of these techniques is NOT for deconstructing a problem?",
+    "options": [
+      "Separate root cause",
+      "Draw limits of problem",
+      "Identify 5W's from problem statement",
+      "Combine all sub-solutions to make a new problem"
+    ],
+    "correctAnswer": "Combine all sub-solutions to make a new problem"
+  },
+  {
+    "id": 44,
+    "questionText": "An algorithm is a finite sequence of instructions used to solve a specific problem or to:",
+    "options": [
+      "Create new problems",
+      "Analyze existing solutions",
+      "Perform a specific task",
+      "Ignore the problem"
+    ],
+    "correctAnswer": "Perform a specific task"
+  },
+  {
+    "id": 45,
+    "questionText": "In the summary of Algorithmic Thinking, a \"Problem solving is sequential process to analyze information related to a given situation and generating appropriate solutions\". This corresponds to which part of problem solving?",
+    "options": [
+      "Problem definition",
+      "Planning solution",
+      "Problem analysis",
+      "All of the problem solving steps"
+    ],
+    "correctAnswer": "All of the problem solving steps"
+  },
+  {
+    "id": 46,
+    "questionText": "When breaking down a big problem into smaller problems, it is called:",
+    "options": [
+      "Algorithmic design",
+      "Pattern identification",
+      "Abstraction",
+      "Decomposition"
+    ],
+    "correctAnswer": "Decomposition"
+  },
+  {
+    "id": 47,
+    "questionText": "Thinking the domain of problem and ignoring irrelevant material is called:",
+    "options": [
+      "Algorithmic design",
+      "Pattern identification",
+      "Abstraction",
+      "Problem decomposition"
+    ],
+    "correctAnswer": "Abstraction"
+  },
+  {
+    "id": 48,
+    "questionText": "An algorithm is a finite sequence of instruction to solve a:",
+    "options": [
+      "Unspecified problem",
+      "Specific problem",
+      "Complex problem",
+      "All problems"
+    ],
+    "correctAnswer": "Specific problem"
+  },
+  {
+    "id": 49,
+    "questionText": "What is the benefit of breaking a problem down into smaller parts?",
+    "options": [
+      "It makes the problem harder to solve.",
+      "It allows for more complex solutions.",
+      "It simplifies the problem and makes it easier to manage.",
+      "It reduces the need for planning."
+    ],
+    "correctAnswer": "It simplifies the problem and makes it easier to manage."
+  },
+  {
+    "id": 50,
+    "questionText": "The example of \"Algorithm to print first ten integers\" is an example of what kind of flow?",
+    "options": [
+      "Sequential flow",
+      "Conditional flow",
+      "Repetitive flow",
+      "Decision making"
+    ],
+    "correctAnswer": "Repetitive flow"
+  }
+],
   "Computational Thinking": [
     { "id": 1, "questionText": "What is Computational Thinking (CT)?", "options": ["A method for solving mathematical equations", "A set of problem-solving skills and techniques we use to solve a problem", "A programming language", "A type of computer hardware"], "correctAnswer": "A set of problem-solving skills and techniques we use to solve a problem" },
     { "id": 2, "questionText": "Which of the following is NOT one of the main techniques of Computational Thinking?", "options": ["Decomposition", "Pattern Recognition", "Algorithm Design", "Memorization"], "correctAnswer": "Memorization" },
@@ -322,8 +874,6 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 47, "questionText": "What should a good digital citizen do regarding their reputation online?", "options": ["Ignore it", "Protect it by safeguarding privacy and content", "Let others manage it", "Only care about offline reputation"], "correctAnswer": "Protect it by safeguarding privacy and content" },
     { "id": 48, "questionText": "Which social media platform is mentioned as a place where cyberbullying occurs?", "options": ["LinkedIn", "Instagram", "Twitter", "Facebook"], "correctAnswer": "Facebook" },
     { "id": 49, "questionText": "What is the general advice for using social media regarding personal information?", "options": ["Share everything freely", "Be careful what you share online", "Only share with close friends", "Only share during specific hours"], "correctAnswer": "Be careful what you share online" },
-    { "id": 50, "questionText": "What is one of the key concepts of 'Digital Citizenship'?", "options": ["Using digital devices for entertainment only", "Participating in online commerce", "Understanding ethical issues in a digital environment", "Developing programming skills"] },
-    { "id": 51, "questionText": "What is a 'Good Digital Citizen'? a) Someone who never uses the internet. b) Someone who always agrees with others online. c) Someone who respects for yourself and other people and is important in all relationships. d) Someone who shares all personal information online.", "correctAnswer": "Someone who respects for yourself and other people and is important in all relationships." }
   ],
   "Entrepreneurship in Digital Age": [
     { "id": 1, "questionText": "What is a 'business plan'?", "options": ["A marketing strategy", "An essential written document that provides a detailed description and a complete overview of the company's future", "A financial statement", "A project timeline"], "correctAnswer": "An essential written document that provides a detailed description and a complete overview of the company's future" },
@@ -377,4 +927,4 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 49, "questionText": "What is a 'Competitor Analysis'?", "options": ["Business description.", "Executive summary.", "An assessment of the strengths and weaknesses of current and potential competitors.", "Project management."], "correctAnswer": "An assessment of the strengths and weaknesses of current and potential competitors." },
     { "id": 50, "questionText": "What is the importance of 'Quality Assurance'?", "options": ["It only focuses on customer service.", "It ensures that products and services meet certain quality standards.", "It is solely about marketing.", "It manages employee performance."], "correctAnswer": "It ensures that products and services meet certain quality standards." }
 ]
-}
+  }

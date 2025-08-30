@@ -6,7 +6,7 @@ export const chapters = [
   "Estimation and Approximation",
   "Square Roots and Cube Roots",
   "Sets",
-  "Ratio, Rate and Proportion",
+  "Ratio Rate and Proportion",
   "Percentage and Financial Arithmetic",
   "Number Sequence and Patterns",
   "Expansion and Factorization",
@@ -2237,7 +2237,7 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "d) Universal set"
   }
 ],
-  "Ratio, Rate and Proportion": [
+  "Ratio Rate and Proportion": [
   {
     "id": 1,
     "questionText": "The relation of equality of two ratios is called:",
@@ -5549,7 +5549,7 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "C) Slant height of a cone"
   }
 ],
-  "Congruency and Similarity, Construction of Triangles and Transformation": [
+  "Congruency and Similarity Construction of Triangles and Transformation": [
   {
     "id": 1,
     "questionText": "Which symbol is used to denote congruence?",
