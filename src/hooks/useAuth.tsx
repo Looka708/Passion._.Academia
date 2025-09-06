@@ -3,7 +3,7 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
-import { verifyUserInSheet, addUserToSheet } from '@/app/actions';
+import { verifyUserInSheet } from '@/app/actions';
 import { auth } from '@/lib/firebase/config';
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut, User as FirebaseUser } from 'firebase/auth';
 import { getUserByEmail } from '@/lib/data/users';
@@ -27,39 +27,51 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
+    // Attempt to load user from localStorage synchronously to avoid flicker
+    try {
+      const storedUser = localStorage.getItem('passion-academia-user');
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
+      }
+    } catch (error) {
+      console.error("Failed to parse user from localStorage", error);
+      localStorage.removeItem('passion-academia-user');
+    }
+    // Set loading to false after initial check, onAuthStateChanged will update if needed
+    setIsLoading(false); 
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      setIsLoading(true);
       setFirebaseUser(firebaseUser);
       if (firebaseUser) {
         // If user is logged in with Firebase, fetch their profile from Firestore
         const userProfile = await getUserByEmail(firebaseUser.email!);
         setUser(userProfile);
-        localStorage.setItem('passion-academia-user', JSON.stringify(userProfile));
+        if (userProfile) {
+            localStorage.setItem('passion-academia-user', JSON.stringify(userProfile));
+        } else {
+             // This case can happen if user is in Auth but not Firestore, log them out.
+             await signOut(auth);
+             setUser(null);
+             localStorage.removeItem('passion-academia-user');
+        }
       } else {
-        // If not logged in, clear user data
-        setUser(null);
-        localStorage.removeItem('passion-academia-user');
+        // If not logged in with Firebase, check for the default admin user in localStorage
+        const storedUser = localStorage.getItem('passion-academia-user');
+        if (storedUser) {
+            const parsedUser: User | null = JSON.parse(storedUser);
+             if(!(parsedUser && parsedUser.role === 'admin' && parsedUser.email === "admin@passion-academia.com")) {
+                setUser(null);
+                localStorage.removeItem('passion-academia-user');
+            } else {
+              setUser(parsedUser);
+            }
+        } else {
+            setUser(null);
+        }
       }
       setIsLoading(false);
     });
-
-    // Fallback for non-Firebase Auth users (like the default admin)
-    if (!firebaseUser) {
-        try {
-          const storedUser = localStorage.getItem('passion-academia-user');
-          if (storedUser) {
-            const parsedUser: User = JSON.parse(storedUser);
-            // Simple check if it's the admin user to avoid conflicts
-            if(parsedUser.role === 'admin') {
-                setUser(parsedUser);
-            }
-          }
-        } catch (error) {
-            console.error("Failed to parse user from localStorage", error);
-            localStorage.removeItem('passion-academia-user');
-        }
-        setIsLoading(false);
-    }
-
 
     return () => unsubscribe();
   }, []);
@@ -77,7 +89,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }
 
         setUser(userProfile);
-        localStorage.setItem('passion-academia-user', JSON.stringify(userProfile));
+        if (userProfile) {
+          localStorage.setItem('passion-academia-user', JSON.stringify(userProfile));
+        }
          if (userProfile?.role === 'admin') {
             router.push('/admin');
         } else {
@@ -86,7 +100,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return;
     } catch (error: any) {
          // If Firebase Auth fails, check against the custom admin user in Firestore
-        if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') {
+        if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password') {
              const result = await verifyUserInSheet(email, password);
              if (result.success && result.name && result.email && result.course && result.role) {
                 // Admin role check allows login regardless of active status for the default admin
@@ -99,7 +113,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                     email: result.email,
                     password: '', // Don't store password in context
                     course: result.course,
-                    role: result.role,
+                    role: result.role as 'admin' | 'user',
                     active: result.active ?? true, // Default to active
                 };
                 setUser(userData);
@@ -111,9 +125,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 }
                 return;
             }
+             // If firebase auth fails and custom auth also fails
+            if (error.code === 'auth/user-not-found' || result.success === false) {
+                 throw new Error("Account not found. Please contact an administrator to get an account.");
+            }
+            throw new Error("Invalid email or password.");
         }
         console.error("Login error:", error);
-        throw new Error(error.message || "Invalid email or password.");
+        throw new Error(error.message || "An unexpected error occurred during login.");
     }
   };
 

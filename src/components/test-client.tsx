@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,12 +13,13 @@ import {
 } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { CheckCircle, XCircle, ArrowLeft, ArrowRight, AlertTriangle } from "lucide-react";
+import { CheckCircle, XCircle, ArrowLeft, ArrowRight, AlertTriangle, Timer } from "lucide-react";
 import Link from "next/link";
 import { Progress } from "@/components/ui/progress";
 import { Slider } from "@/components/ui/slider";
 import { MCQ } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import Confetti from "./confetti";
 
 interface TestClientProps {
     grade: number | string;
@@ -37,6 +38,21 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(17);
+
+  useEffect(() => {
+    if (testStarted && !submitted) {
+      if (timeLeft > 0) {
+        const timer = setTimeout(() => {
+          setTimeLeft(timeLeft - 1);
+        }, 1000);
+        return () => clearTimeout(timer);
+      } else {
+        handleNext(); // Auto-move to next question when time is up
+      }
+    }
+  }, [testStarted, submitted, timeLeft]);
 
   const startTest = () => {
     if (chapterMcqs.length > 0) {
@@ -48,6 +64,8 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
       setSelectedAnswers({});
       setSubmitted(false);
       setScore(0);
+      setShowConfetti(false);
+      setTimeLeft(17);
     }
   };
 
@@ -65,22 +83,23 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
         correctAnswers++;
       }
     });
-    setScore((correctAnswers / mcqs.length) * 100);
+    const finalScore = (correctAnswers / mcqs.length) * 100;
+    setScore(finalScore);
+    if (finalScore >= 70) {
+        setShowConfetti(true);
+    }
     setSubmitted(true);
   };
 
   const handleNext = () => {
     if (currentQuestionIndex < mcqs.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setTimeLeft(17); // Reset timer for next question
+    } else {
+      handleSubmit(); // Auto-submit if it's the last question
     }
   };
 
-  const handlePrev = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
-  };
-  
   const getOptionValue = (option: string | { label: string; svg: string }) => {
     return typeof option === 'string' ? option : option.label;
   };
@@ -148,8 +167,16 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
 
   if (submitted) {
     return (
-       <div className="container mx-auto px-4 py-12">
-        <Card className="max-w-3xl mx-auto">
+       <div className="container mx-auto px-4 py-12 relative">
+        {showConfetti && <Confetti />}
+        <Card className="max-w-3xl mx-auto overflow-hidden">
+          {score < 40 && (
+            <div className="absolute inset-0 flex items-center justify-center bg-transparent z-10 pointer-events-none">
+                 <div className="stamp-animation text-9xl font-bold text-red-500/30 border-4 border-red-500/30 rounded-lg p-8 transform -rotate-12 -translate-y-4 opacity-0">
+                    FAIL
+                </div>
+            </div>
+           )}
           <CardHeader className="text-center">
             <CardTitle className="text-3xl">Test Results</CardTitle>
             <CardDescription>
@@ -206,9 +233,15 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
         <Card className="max-w-3xl mx-auto">
             <CardHeader>
                  <Progress value={(currentQuestionIndex + 1) / mcqs.length * 100} className="mb-4" />
-                <CardTitle className={cn("text-xl", currentMcq.language === 'urdu' ? 'font-urdu text-2xl text-right' : '')}>
-                    {`Question ${currentQuestionIndex + 1} of ${mcqs.length}`}
-                </CardTitle>
+                 <div className="flex justify-between items-center">
+                    <CardTitle className={cn("text-xl", currentMcq.language === 'urdu' ? 'font-urdu text-2xl text-right' : '')}>
+                        {`Question ${currentQuestionIndex + 1} of ${mcqs.length}`}
+                    </CardTitle>
+                    <div className="flex items-center gap-2 font-bold text-lg">
+                        <Timer className="h-6 w-6" />
+                        <span>{timeLeft}s</span>
+                    </div>
+                </div>
                 {currentMcq.questionText && <CardDescription className={cn("pt-4 text-lg", currentMcq.language === 'urdu' ? 'font-urdu text-xl text-right' : '')}>
                     {currentMcq.questionText}
                 </CardDescription>}
@@ -246,11 +279,7 @@ export default function TestClient({ grade, subject, chapterTitle, chapterMcqs, 
                     </div>
                 </RadioGroup>
             </CardContent>
-            <CardFooter className="flex justify-between">
-                <Button onClick={handlePrev} disabled={currentQuestionIndex === 0}>
-                    <ArrowLeft className="mr-2 h-4 w-4" /> Previous
-                </Button>
-
+            <CardFooter className="flex justify-end">
                 {currentQuestionIndex === mcqs.length - 1 ? (
                     <Button onClick={handleSubmit}>
                         Submit

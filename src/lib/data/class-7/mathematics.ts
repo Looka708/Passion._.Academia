@@ -32,7 +32,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Integers",
       "D) Rational Numbers"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Integers"
   },
   {
     "id": 2,
@@ -43,7 +43,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Natural numbers including zero",
       "D) Negative numbers"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Natural numbers including zero"
   },
   {
     "id": 3,
@@ -54,7 +54,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A number that can be expressed in the form p/q, where p, q are integers and q ≠ 0.",
       "D) A number that is always positive."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) A number that can be expressed in the form p/q, where p, q are integers and q ≠ 0."
   },
   {
     "id": 4,
@@ -65,7 +65,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Below sea level",
       "D) Temperature"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Below sea level"
   },
   {
     "id": 5,
@@ -76,7 +76,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) At the same point",
       "D) It varies"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) To the right"
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Neither positive nor negative",
       "D) A natural number"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Neither positive nor negative"
   },
   {
     "id": 7,
@@ -98,7 +98,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 0",
       "D) Any whole number"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 0"
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) -3, -2, 0, 1, 2, 3",
       "D) -2, -3, 0, 1, 2, 3"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) -3, -2, 0, 1, 2, 3"
   },
   {
     "id": 9,
@@ -120,7 +120,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) The value of a positive number only",
       "D) The value of a negative number only"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) The value of a number without regard to its sign"
   },
   {
     "id": 10,
@@ -131,7 +131,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 7",
       "D) 4"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 8"
   },
   {
     "id": 11,
@@ -142,7 +142,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) First period",
       "D) Fourth period"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) First period"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Not explicitly stated, but the chart provides a framework for understanding place value.",
       "D) Nine million, eighty-seven thousand, four hundred thirty-six"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Nine hundred eighty-seven thousand, four hundred thirty-six"
   },
   {
     "id": 13,
@@ -164,7 +164,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) They are equal",
       "D) Cannot be compared"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 923530"
   },
   {
     "id": 14,
@@ -175,7 +175,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 987219",
       "D) All are equal"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 923530"
   },
   {
     "id": 15,
@@ -186,7 +186,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 0.5, 2.5, 3.0, 4.7, 4.8, -3.7, -5.0, -7.5",
       "D) -5.0, -7.5, -3.7, 0.5, 2.5, 3.0, 4.7, 4.8"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) -7.5, -5.0, -3.7, 0.5, 2.5, 3.0, 4.7, 4.8"
   },
   {
     "id": 16,
@@ -197,7 +197,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Thousandths",
       "D) Ones"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Hundredths"
   },
   {
     "id": 17,
@@ -208,7 +208,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 235.70, 235.74, 235.89",
       "D) 235.70, 235.89, 235.74"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 235.70, 235.74, 235.89"
   },
   {
     "id": 18,
@@ -219,7 +219,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Mixed Fractions",
       "D) Unit Fractions"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Proper Fractions"
   },
   {
     "id": 19,
@@ -230,7 +230,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Mixed Fractions",
       "D) Unit Fractions"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Mixed Fractions"
   },
   {
     "id": 20,
@@ -241,7 +241,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3",
       "D) 6"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 6"
   },
   {
     "id": 21,
@@ -252,7 +252,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Common Denominator",
       "D) Lowest Common Denominator"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Highest Common Factor (HCF)"
   },
   {
     "id": 22,
@@ -263,7 +263,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) (2x4+1)/4",
       "D) (2+4)/1"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) (2x4+1)/4"
   },
   {
     "id": 23,
@@ -274,7 +274,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) p/q",
       "D) p x q"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) p/q"
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Z",
       "D) Q"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Q"
   },
   {
     "id": 25,
@@ -296,7 +296,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Mixed number",
       "D) Whole number"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Improper fractio"
   },
   {
     "id": 26,
@@ -307,7 +307,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) At 0",
       "D) Cannot be determined"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Left side"
   },
   {
     "id": 27,
@@ -318,7 +318,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Convert them into like fractions by finding their LCM.",
       "D) Convert them to mixed numbers."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Convert them into like fractions by finding their LCM."
   },
   {
     "id": 28,
@@ -329,7 +329,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 11/18",
       "D) 1/2"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 11/18"
   },
   {
     "id": 29,
@@ -340,7 +340,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Find the LCM of the denominators.",
       "D) Subtract the numerators."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Find the LCM of the denominators."
   },
   {
     "id": 30,
@@ -351,7 +351,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) -p/q",
       "D) 1/(p/q)"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) -p/q"
   },
   {
     "id": 31,
@@ -362,7 +362,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distributive property of rational numbers w.r.t. multiplication over addition",
       "D) Additive Inverse property"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Commutative property of rational numbers w.r.t. addition"
   },
   {
     "id": 32,
@@ -373,7 +373,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) (pr)/(qs)",
       "D) (p/s) x (r/q)"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) (pr)/(qs)"
   },
   {
     "id": 33,
@@ -384,7 +384,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Infinite",
       "D) Undefined"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Undefined"
   },
   {
     "id": 34,
@@ -395,7 +395,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Division",
       "D) Modulo"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Division"
   },
   {
     "id": 35,
@@ -406,7 +406,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) p/q * (r/s + t/u) = p/q * r/s + p/q * t/u",
       "D) p/q + 0 = p/q"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) (p/q + r/s) + t/u = p/q + (r/s + t/u)"
   },
   {
     "id": 36,
@@ -417,7 +417,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distributive Property",
       "D) Additive Inverse"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Distributive Property"
   },
   {
     "id": 37,
@@ -428,7 +428,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Look at the digit at the next to the required degree of accuracy.",
       "D) Multiply the number by 10."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Look at the digit at the next to the required degree of accuracy."
   },
   {
     "id": 38,
@@ -439,7 +439,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3900",
       "D) 3920"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 4000"
   },
   {
     "id": 39,
@@ -450,7 +450,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3920",
       "D) 3000"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 3900"
   },
   {
     "id": 40,
@@ -461,7 +461,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3930",
       "D) 3920"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 3930"
   },
   {
     "id": 41,
@@ -472,7 +472,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 24.3",
       "D) 24.4"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 24.35"
   },
   {
     "id": 42,
@@ -483,7 +483,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 0.0286",
       "D) 0.03"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 0.029"
   },
   {
     "id": 43,
@@ -494,7 +494,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Its sign",
       "D) Whether it's positive"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Its distance from zero"
   },
   {
     "id": 44,
@@ -505,7 +505,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) -43500",
       "D) -43600"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) -44000"
   },
   {
     "id": 45,
@@ -516,7 +516,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Significant",
       "D) Variable"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Significant"
   },
   {
     "id": 46,
@@ -527,7 +527,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) It is incorrect.",
       "D) It is only an estimate."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) It is reasonable."
   },
   {
     "id": 47,
@@ -538,7 +538,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) The difference between the actual value and approximated/estimated value",
       "D) The sum of actual and estimated values"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) The difference between the actual value and approximated/estimated value"
   },
   {
     "id": 48,
@@ -549,7 +549,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Commutative, Associative, and Distributive properties",
       "D) Numerator and Denominator"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Commutative, Associative, and Distributive properties"
   },
   {
     "id": 49,
@@ -560,7 +560,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) LCM is used to determine the sign of rational numbers.",
       "D) LCM is the difference between two rational numbers."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) The smallest common multiple of two or more rational numbers is called LCM."
   },
   {
     "id": 50,
@@ -571,7 +571,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A line on which numbers are represented by points",
       "D) A line used for geometric shapes"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) A line on which numbers are represented by points"
   }
 ],
   "Simplification": [
@@ -584,7 +584,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) To solve mathematical expressions",
       "D) To change the values of numbers"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) To solve mathematical expressions"
   },
   {
     "id": 2,
@@ -595,7 +595,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Binary",
       "D) Bold"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Brackets"
   },
   {
     "id": 3,
@@ -606,7 +606,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) One",
       "D) Open"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Order or Of"
   },
   {
     "id": 4,
@@ -617,7 +617,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Decimal",
       "D) Degree"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Division"
   },
   {
     "id": 5,
@@ -628,7 +628,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Multiplication",
       "D) Metric"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Multiplication"
   },
   {
     "id": 6,
@@ -639,7 +639,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Algebra",
       "D) Area"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Addition"
   },
   {
     "id": 7,
@@ -650,7 +650,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Subtraction",
       "D) Sum"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Subtraction"
   },
   {
     "id": 8,
@@ -661,7 +661,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Addition",
       "D) Subtraction"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Brackets"
   },
   {
     "id": 9,
@@ -672,7 +672,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Box brackets",
       "D) Vinculum or bar"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Round, curved brackets"
   },
   {
     "id": 10,
@@ -683,7 +683,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Box brackets or square brackets",
       "D) Vinculum or bar"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Box brackets or square brackets"
   },
   {
     "id": 11,
@@ -694,7 +694,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Box brackets",
       "D) Vinculum or bar"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Curly brackets"
   },
   {
     "id": 12,
@@ -705,7 +705,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) [ ]",
       "D) A horizontal line over numbers"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) A horizontal line over numbers"
   },
   {
     "id": 13,
@@ -716,7 +716,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {12 - 6 - (...)}",
       "D) 18 ÷ 2"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) (6 + 8 - 5)"
   },
   {
     "id": 14,
@@ -727,7 +727,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Either, from left to right",
       "D) Depends on the numbers"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Either, from left to right"
   },
   {
     "id": 15,
@@ -738,7 +738,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Either, from left to right",
       "D) Depends on the numbers"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Either, from left to right"
   },
   {
     "id": 16,
@@ -749,7 +749,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 24",
       "D) 48"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 24"
   },
   {
     "id": 17,
@@ -760,7 +760,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 16",
       "D) 0"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 6"
   },
   {
     "id": 18,
@@ -771,7 +771,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 20",
       "D) 15"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 8"
   },
   {
     "id": 19,
@@ -782,7 +782,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 8",
       "D) 1"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 4"
   },
   {
     "id": 20,
@@ -793,7 +793,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 21",
       "D) 40"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 21"
   },
   {
     "id": 21,
@@ -804,7 +804,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3",
       "D) 10"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 5"
   },
   {
     "id": 22,
@@ -815,7 +815,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) BODMAS",
       "D) LMN"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) BODMAS"
   },
   {
     "id": 23,
@@ -826,7 +826,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Achilles Reselfelt",
       "D) Euclid"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Achilles Reselfelt"
   },
   {
     "id": 24,
@@ -837,7 +837,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Orders (powers and square roots)",
       "D) Simplification"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Orders (powers and square roots)"
   },
   {
     "id": 25,
@@ -848,7 +848,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 2.25 + 8.5 × [2 × 1.37 + {3.2 + 5.2 - 3.2}]",
       "D) 2.25 + 8.5 × [2 × 1.37 + {3.2 - 7.2 + 5.2}] = 2.25 + 8.5 × [2 × 1.37 + 1.2] = 2.25 + 8.5 × [2.74 + 1.2] = 2.25 + 8.5 × 3.94 = 2.25 + 33.49 = 35.74 (This is a complex calculation; the key is the order of operations)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 2.25 + 8.5 × [2 × 1.37 + {3.2 - 7.2 + 5.2}] = 2.25 + 8.5 × [2 × 1.37 + 1.2] = 2.25 + 8.5 × [2.74 + 1.2] = 2.25 + 8.5 × 3.94 = 2.25 + 33.49 = 35.74 (This is a complex calculation; the key is the order of operations)"
   },
   {
     "id": 26,
@@ -859,7 +859,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) When it is reduced to its simplest form",
       "D) When it has been multiplied by 0"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) When it is reduced to its simplest form"
   },
   {
     "id": 27,
@@ -870,7 +870,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 1/3 + 5/3 = 6/3 = 2",
       "D) 1/3 + 7/3"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 1/3 + 5/3 = 6/3 = 2"
   },
   {
     "id": 28,
@@ -881,7 +881,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 68.5 (70 + 0.5 - 2)",
       "D) 69"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 68.5 (70 + 0.5 - 2)"
   },
   {
     "id": 29,
@@ -892,18 +892,18 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 25 - [5 + 7 + 12] = 25 - 24 = 1",
       "D) 25 - [5 + 28/4 + 12] = 25 - [5 + 7 + 12] = 25 - 24 = 1"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 25 - [5 + 7 + 12] = 25 - 24 = 1"
   },
   {
     "id": 30,
     "questionText": "Simplify: 12 × 8 - [64 - {18 + (9 - 6 - 3)}]",
     "options": [
-      "A) 96 - [64 - {18 + 0}] = 96 -  = 96 - 46 = 50",
-      "B) 96 -  = 96 - 46 = 50",
-      "C) 96 -  = 96 - 43 = 53",
-      "D) 96 - [64 - {18 + (0)}] = 96 -  = 96 - 46 = 50"
+      "A) 96 - [64 - {18 + 0}] = 96 -  = 96 - 46 = 50",
+      "B) 96 -  = 96 - 46 = 50",
+      "C) 96 -  = 96 - 43 = 53",
+      "D) 96 - [64 - {18 + (0)}] = 96 -  = 96 - 46 = 50"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 96 - [64 - {18 + 0}] = 96 -  = 96 - 46 = 50"
   },
   {
     "id": 31,
@@ -912,9 +912,9 @@ export const mcqs: Record<string, MCQ[]> = {
       "A) 72 - [32 - {24 ÷ (8 - 8)}] = 72 - [32 - {24 ÷ 0}] which is undefined.",
       "B) Undefined (Due to division by zero)",
       "C) 72 - [32 - {24 ÷ 0}] = 72 - undefined",
-      "D) 72 - [32 - {24 ÷ (4)}] = 72 -  = 72 - 26 = 46"
+      "D) 72 - [32 - {24 ÷ (4)}] = 72 -  = 72 - 26 = 46"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Undefined (Due to division by zero)"
   },
   {
     "id": 32,
@@ -925,7 +925,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Brackets, Orders, Division, Multiplication, Addition, Subtraction",
       "D) Brackets, Orders, Addition, Subtraction, Division, Multiplication"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Brackets, Orders, Division, Multiplication, Addition, Subtraction"
   },
   {
     "id": 33,
@@ -936,7 +936,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 1/7 - [7/6 {490/8 + 121/8}] = 1/7 - [7/6 {611/8}] = 1/7 - 4277/48 = (48 - 29939)/336 = -29891/336 (Conceptually, it's about following order)",
       "D) 1/7 - 7/6 * (245/4 + 121/8)"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 1/7 - [7/6 {490/8 + 121/8}] = 1/7 - [7/6 {611/8}] = 1/7 - 4277/48 = (48 - 29939)/336 = -29891/336 (Conceptually, it's about following order)"
   },
   {
     "id": 34,
@@ -947,7 +947,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) [3/5 + 1/4 { (45+40-12)/60 }] = [3/5 + 1/4 * 73/60] = [3/5 + 73/240] = (144 + 73)/240 = 217/240",
       "D) [3/5 + 1/4 * 3/2 + 2/3 - 1/5]"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) [3/5 + 1/4 { (45+40-12)/60 }] = [3/5 + 1/4 * 73/60] = [3/5 + 73/240] = (144 + 73)/240 = 217/240"
   },
   {
     "id": 35,
@@ -958,7 +958,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Real-world applications",
       "D) Only pure mathematics"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Real-world applications"
   },
   {
     "id": 36,
@@ -969,7 +969,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 32",
       "D) 0.8 × 39.78"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 0.8 × [40 - 0.202] = 0.8 × 39.798 = 31.8384"
   },
   {
     "id": 37,
@@ -980,7 +980,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 5.28 × 40.827 × 2.03",
       "D) 2.25 × 8.5 × 9.14 = 2.25 × 77.69 = 174.80 (This question refers to example 3 from page 30, which has similar complexity. The answer will be the result of a long calculation. Assuming a direct simplification based on the prompt structure, rather than an exact match to a simple problem)"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 5.28 × [1.026 + {1.123 × (17.038)}] × 2.03 = 5.28 × [1.026 + 19.1352] × 2.03 = 5.28 × 20.1612 × 2.03"
   },
   {
     "id": 38,
@@ -991,7 +991,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Vinculum/Bar, Round, Curly, Box",
       "D) Round, Box, Curly"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Vinculum/Bar, Round, Curly, Box"
   },
   {
     "id": 39,
@@ -1002,7 +1002,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) From left to right.",
       "D) From right to left."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) From left to right."
   },
   {
     "id": 40,
@@ -1013,7 +1013,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) From left to right.",
       "D) From right to left."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) From left to right."
   },
   {
     "id": 41,
@@ -1024,7 +1024,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 10 + 2 × 4 = 10 + 8 = 18",
       "D) 10 + 8 = 18"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 10 + 2 × 4 = 10 + 8 = 18"
   },
   {
     "id": 42,
@@ -1035,7 +1035,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 11",
       "D) 18"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 6 + 7 - 2 = 13 - 2 = 11"
   },
   {
     "id": 43,
@@ -1046,7 +1046,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 7",
       "D) 5"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 25"
   },
   {
     "id": 44,
@@ -1057,7 +1057,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 9",
       "D) 30"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 3"
   },
   {
     "id": 45,
@@ -1068,7 +1068,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 8",
       "D) 4"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 4 + 12 ÷ 3 = 4 + 4 = 8"
   },
   {
     "id": 46,
@@ -1079,7 +1079,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 10 - 4 ÷ 2 = 8",
       "D) 10 - 4 ÷ 2 = 3"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 10 - 4 ÷ 2 = 8"
   },
   {
     "id": 47,
@@ -1090,7 +1090,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 20 - 1 = 19",
       "D) 20 - 4 = 16"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 20 - 4 + 3 = 19"
   },
   {
     "id": 48,
@@ -1101,7 +1101,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 12 - 6 - 9",
       "D) 18 - 2"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 12 - 6 - 9"
   },
   {
     "id": 49,
@@ -1112,7 +1112,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Depends on numbers",
       "D) Left to right"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Multiplication"
   },
   {
     "id": 50,
@@ -1123,7 +1123,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Only decimals",
       "D) Whole numbers, integers, decimals, fractions"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Whole numbers, integers, decimals, fractions"
   }
 ],
   "Sets":[
@@ -1136,7 +1136,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A group of mathematical operations.",
       "D) A list of equations."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A collection of objects or things. (Specifically, a well-defined collection)"
   },
   {
     "id": 2,
@@ -1147,7 +1147,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) The collection of coins in your pocket.",
       "D) The collection of good books."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) The collection of coins in your pocket."
   },
   {
     "id": 3,
@@ -1158,7 +1158,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) The collection of talented singers.",
       "D) C = {Vowels in English alphabet}"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) The collection of talented singers."
   },
   {
     "id": 4,
@@ -1169,7 +1169,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) If set A and set B have no common elements.",
       "D) If set A is larger than set B."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) If all the elements of a set A are also the elements of a set B, then set A is called the subset of set B."
   },
   {
     "id": 5,
@@ -1180,7 +1180,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set with no elements.",
       "D) A set that is disjoint from another set."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) If a set A contains all the elements of a set B, then set A is a superset of set B."
   },
   {
     "id": 6,
@@ -1191,7 +1191,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Subset of",
       "D) Superset of"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Is an element of"
   },
   {
     "id": 7,
@@ -1202,7 +1202,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Subset of",
       "D) Superset of"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Is not an element of"
   },
   {
     "id": 8,
@@ -1213,7 +1213,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {} or Ø",
       "D) Both A and B"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Both A and B"
   },
   {
     "id": 9,
@@ -1224,7 +1224,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Singleton set",
       "D) Universal set"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Singleton set"
   },
   {
     "id": 10,
@@ -1235,7 +1235,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set containing only numbers.",
       "D) A set that is empty."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A set with a limited or countable number of elements."
   },
   {
     "id": 11,
@@ -1246,7 +1246,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set that is well-defined.",
       "D) A set that is empty."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) A set with an unlimited or uncountable number of elements."
   },
   {
     "id": 12,
@@ -1257,7 +1257,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Equal set",
       "D) Disjoint set"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Proper subset"
   },
   {
     "id": 13,
@@ -1268,7 +1268,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set A is a proper subset of a set B if they have no common elements.",
       "D) A set A is a proper subset of a set B if A contains B."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) A set A is a proper subset of a set B if all the elements of A are elements of B, and B has at least one element that is not in A."
   },
   {
     "id": 14,
@@ -1279,7 +1279,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set A is an improper subset of a set B if A and B have no common elements.",
       "D) A set A is an improper subset of a set B if A is not well-defined."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) If set A is a subset of set B and A = B, then A is an improper subset of B."
   },
   {
     "id": 15,
@@ -1290,7 +1290,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Two sets that have no common elements.",
       "D) Two sets where one is a subset of the other."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Two sets that have the same number of elements."
   },
   {
     "id": 16,
@@ -1301,7 +1301,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Two sets that have common elements.",
       "D) Two sets where one is a proper subset of the other."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Two sets that contain exactly the same elements."
   },
   {
     "id": 17,
@@ -1312,7 +1312,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Sets that are equivalent.",
       "D) Sets that are proper subsets of each other."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Two or more sets that do not have any common elements."
   },
   {
     "id": 18,
@@ -1323,7 +1323,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Sets that are equal.",
       "D) Sets that are empty."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Two or more sets that have at least one common element."
   },
   {
     "id": 19,
@@ -1334,7 +1334,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Describing sets",
       "D) Listing sets"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Operations on sets"
   },
   {
     "id": 20,
@@ -1345,7 +1345,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) -",
       "D) ×"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) ∪"
   },
   {
     "id": 21,
@@ -1356,7 +1356,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) -",
       "D) ÷"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) ∩"
   },
   {
     "id": 22,
@@ -1367,7 +1367,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {1, 2, 3, 4, 5}",
       "D) { }"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) {1, 2, 3, 4, 5}"
   },
   {
     "id": 23,
@@ -1378,7 +1378,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {1, 2, 3, 4, 5}",
       "D) { }"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) {3}"
   },
   {
     "id": 24,
@@ -1389,7 +1389,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) All elements of set A that are not in set B.",
       "D) All elements in A and B combined."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) All elements of set A that are not in set B."
   },
   {
     "id": 25,
@@ -1400,7 +1400,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {5, 9}",
       "D) {3, 5, 7, 9, 1, 4, 11}"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) {5, 9}"
   },
   {
     "id": 26,
@@ -1411,7 +1411,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A set with no elements.",
       "D) A set that is a subset of all other sets."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A set that contains all elements under consideration."
   },
   {
     "id": 27,
@@ -1422,7 +1422,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) All elements that are in the universal set but not in A.",
       "D) Elements of another set."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) All elements that are in the universal set but not in A."
   },
   {
     "id": 28,
@@ -1433,7 +1433,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {3, 4, 7, 8, 9}",
       "D) {2, 5}"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) {3, 4, 7, 8, 9}"
   },
   {
     "id": 29,
@@ -1444,7 +1444,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distributive Law",
       "D) De Morgan's Law"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) De Morgan's Law"
   },
   {
     "id": 30,
@@ -1455,7 +1455,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distributive Law",
       "D) De Morgan's Law"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) De Morgan's Law"
   },
   {
     "id": 31,
@@ -1466,7 +1466,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Elements are shown in a Venn diagram.",
       "D) Elements are listed randomly."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Elements are written within curly brackets and separated by commas."
   },
   {
     "id": 32,
@@ -1477,7 +1477,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Elements are drawn as a diagram.",
       "D) Elements are given nicknames."
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Elements are described by a common property using symbols."
   },
   {
     "id": 33,
@@ -1488,7 +1488,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) To write the properties of sets.",
       "D) To calculate the number of elements in a set."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) To represent sets and their relationships pictorially using circles and rectangles."
   },
   {
     "id": 34,
@@ -1499,7 +1499,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A triangle",
       "D) A line"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A rectangle"
   },
   {
     "id": 35,
@@ -1510,7 +1510,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Not a subset",
       "D) Superset"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Subset or equal to"
   },
   {
     "id": 36,
@@ -1521,7 +1521,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Equal set",
       "D) Disjoint set"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Proper subset"
   },
   {
     "id": 37,
@@ -1532,7 +1532,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) n²",
       "D) 2ⁿ (This is a common property taught alongside sets, assuming it's part of the curriculum's implied knowledge)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 2ⁿ (This is a common property taught alongside sets, assuming it's part of the curriculum's implied knowledge)"
   },
   {
     "id": 38,
@@ -1543,7 +1543,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
       "D) {2, 4, 6, 8, 10}"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}"
   },
   {
     "id": 39,
@@ -1554,7 +1554,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) U (Universal Set)",
       "D) Ø (Empty Set)"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) U (Universal Set)"
   },
   {
     "id": 40,
@@ -1565,7 +1565,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) U (Universal Set)",
       "D) Ø (Empty Set)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Ø (Empty Set)"
   },
   {
     "id": 41,
@@ -1576,7 +1576,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Complement (A' ≠ B')",
       "D) None of the above"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Union (A ∪ B = B ∪ A)"
   },
   {
     "id": 42,
@@ -1587,7 +1587,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Graphs and charts",
       "D) Lists and tables"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Language, notation, and Venn Diagrams"
   },
   {
     "id": 43,
@@ -1598,7 +1598,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Proper and Improper",
       "D) Disjoint and Overlapping"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Finite and Infinite"
   },
   {
     "id": 44,
@@ -1609,7 +1609,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) {c}",
       "D) {a, b, c, d, e}"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) {d, e}"
   },
   {
     "id": 45,
@@ -1620,7 +1620,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Empty set",
       "D) Singleton set"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Infinite set"
   },
   {
     "id": 46,
@@ -1631,7 +1631,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Empty set",
       "D) Singleton set"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Infinite set"
   },
   {
     "id": 47,
@@ -1642,7 +1642,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Empty set",
       "D) Singleton set"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Infinite set"
   },
   {
     "id": 48,
@@ -1653,7 +1653,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 4 ({}, {a}, {b}, {a,b})",
       "D) 5"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 4 ({}, {a}, {b}, {a,b})"
   },
   {
     "id": 49,
@@ -1664,7 +1664,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Every set",
       "D) No set"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Every set"
   },
   {
     "id": 50,
@@ -1675,7 +1675,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A and B are equal sets.",
       "D) A is a subset of B."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A and B are disjoint sets."
   }
 ],
   "Rate Ratio and Proportion": [
@@ -1688,7 +1688,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A comparison of two quantities with the same units.",
       "D) A statement of equality between two ratios."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) A comparison of two quantities with the same units."
   },
   {
     "id": 2,
@@ -1699,7 +1699,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Proportion",
       "D) Rate"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Antecedent"
   },
   {
     "id": 3,
@@ -1710,7 +1710,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Proportion",
       "D) Rate"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Consequent"
   },
   {
     "id": 4,
@@ -1721,7 +1721,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) No units",
       "D) Both dimension and units"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) No units"
   },
   {
     "id": 5,
@@ -1732,7 +1732,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 21:42",
       "D) 1:1"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 1:2"
   },
   {
     "id": 6,
@@ -1743,7 +1743,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Equal",
       "D) Zero"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Greater"
   },
   {
     "id": 7,
@@ -1754,7 +1754,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Equal",
       "D) Zero"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Smaller"
   },
   {
     "id": 8,
@@ -1765,7 +1765,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A statement comparing two quantities.",
       "D) A proportion in its simplest form."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A ratio of two quantities with different units."
   },
   {
     "id": 9,
@@ -1776,7 +1776,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distance × Time",
       "D) Distance + Time"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Distance / Time"
   },
   {
     "id": 10,
@@ -1787,7 +1787,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 85 km/h ((90+80)/2 = 170/2 = 85)",
       "D) 170 km/h"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 85 km/h ((90+80)/2 = 170/2 = 85)"
   },
   {
     "id": 11,
@@ -1798,7 +1798,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) A relationship between three quantities.",
       "D) A calculation of speed."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) A mathematical comparison between two ratios."
   },
   {
     "id": 12,
@@ -1809,7 +1809,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) ::",
       "D) Both A and C (equality of ratios, i.e., a:b::c:d or a/b = c/d)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Both A and C (equality of ratios, i.e., a:b::c:d or a/b = c/d)"
   },
   {
     "id": 13,
@@ -1820,7 +1820,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Products",
       "D) Ratios"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Means"
   },
   {
     "id": 14,
@@ -1831,7 +1831,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Products",
       "D) Ratios"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Extremes"
   },
   {
     "id": 15,
@@ -1842,7 +1842,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Product of means = Product of extremes",
       "D) Difference of means = Difference of extremes"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Product of means = Product of extremes"
   },
   {
     "id": 16,
@@ -1853,7 +1853,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Rs. 300",
       "D) Rs. 400"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Rs. 300"
   },
   {
     "id": 17,
@@ -1864,7 +1864,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Remains the same",
       "D) Becomes zero"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Increases"
   },
   {
     "id": 18,
@@ -1875,7 +1875,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Remains the same",
       "D) Becomes infinite"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Decreases"
   },
   {
     "id": 19,
@@ -1886,7 +1886,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 16 days (10*24 = 15*x, x = 240/15 = 16)",
       "D) 36 days"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 16 days (10*24 = 15*x, x = 240/15 = 16)"
   },
   {
     "id": 20,
@@ -1897,7 +1897,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 100:19",
       "D) 100:19 (5000:950, divide by 50)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 100:19 (5000:950, divide by 50)"
   },
   {
     "id": 21,
@@ -1908,7 +1908,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 20:8",
       "D) 5:2 (2000:800, divide by 400)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 5:2 (2000:800, divide by 400)"
   },
   {
     "id": 22,
@@ -1919,7 +1919,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 2:3 (14 days : 21 days = 2:3)",
       "D) 7:21"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 2:3 (14 days : 21 days = 2:3)"
   },
   {
     "id": 23,
@@ -1930,7 +1930,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 8:13 (40/5 : 65/5 = 8:13)",
       "D) 65:40"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 8:13 (40/5 : 65/5 = 8:13)"
   },
   {
     "id": 24,
@@ -1941,7 +1941,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 1200 * 5/13 = 461.54",
       "D) 1200 * 8/13 = 738.46"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 1200 * 5/8 = 750"
   },
   {
     "id": 25,
@@ -1952,7 +1952,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Denominator",
       "D) Term"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Numerator (In fraction form, ratio a/b)"
   },
   {
     "id": 26,
@@ -1963,7 +1963,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 60 / 3600 m/s",
       "D) 60 × 3600 m/s"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) 60 × 1000 / 3600 = 16.67 m/s"
   },
   {
     "id": 27,
@@ -1974,7 +1974,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Uniform speed",
       "D) Constant speed"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Uniform speed"
   },
   {
     "id": 28,
@@ -1985,7 +1985,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Calories per serving",
       "D) Kilometers per day (80 days/54 km) (Unit rate is typically something per one unit)"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Kilometers per day (80 days/54 km) (Unit rate is typically something per one unit)"
   },
   {
     "id": 29,
@@ -1996,7 +1996,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Rs. 495",
       "D) Rs. 99"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Rs. 495"
   },
   {
     "id": 30,
@@ -2007,7 +2007,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 10:40",
       "D) 1:4"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 4:1"
   },
   {
     "id": 31,
@@ -2018,7 +2018,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Terms",
       "D) Numbers"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Extremes"
   },
   {
     "id": 32,
@@ -2029,7 +2029,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) (2nd × 4th) / 1st",
       "D) (1st × 2nd) / 4th"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) (1st × 4th) / 2nd (This is consistent with product of means = product of extremes)"
   },
   {
     "id": 33,
@@ -2040,7 +2040,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Rs. 60",
       "D) Cannot be determined from the provided information."
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) Cannot be determined from the provided information."
   },
   {
     "id": 34,
@@ -2051,7 +2051,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Not enough information",
       "D) 100 km/hour"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) Not enough information"
   },
   {
     "id": 35,
@@ -2062,7 +2062,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Distance - Time",
       "D) Distance + Time"
     ],
-    "correctAnswer": "A"
+    "correctAnswer": "A) Total distance covered / Total time taken"
   },
   {
     "id": 36,
@@ -2073,7 +2073,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 78.75 km/h (630/8)",
       "D) 80 km/h"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 78.75 km/h (630/8)"
   },
   {
     "id": 37,
@@ -2084,7 +2084,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Rate",
       "D) Fraction"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Proportion"
   },
   {
     "id": 38,
@@ -2095,7 +2095,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Two quantities are in direct proportion if their product is constant.",
       "D) Two quantities are in direct proportion if their sum is constant."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Two quantities are said to be in direct proportion if increase/decrease in one causes increase/decrease in other quantity in the same ratio."
   },
   {
     "id": 39,
@@ -2106,7 +2106,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Two quantities are in indirect proportion if their ratio is constant.",
       "D) Two quantities are in indirect proportion if their sum is constant."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Two quantities are said to be in indirect proportion if increase/decrease in one causes decrease/increase in other quantity in the same ratio."
   },
   {
     "id": 40,
@@ -2117,7 +2117,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Precedent",
       "D) Follower"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Consequent"
   },
   {
     "id": 41,
@@ -2128,7 +2128,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) a × b",
       "D) a : b or a/b"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) a : b or a/b"
   },
   {
     "id": 42,
@@ -2139,7 +2139,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 180:120",
       "D) The increase is Rs. 60. The ratio of increase is 180/120 = 3/2."
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) The increase is Rs. 60. The ratio of increase is 180/120 = 3/2."
   },
   {
     "id": 43,
@@ -2150,7 +2150,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 800 × (10/7) = 1142.857 (Since it's \"increase in ratio of 7:10\", it means from 7 parts it becomes 10 parts, so multiply by 10/7. The example on page 48 uses this interpretation.)",
       "D) 800 + (800 × 7/10) = 1360"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 800 × (10/7) = 1142.857 (Since it's \"increase in ratio of 7:10\", it means from 7 parts it becomes 10 parts, so multiply by 10/7. The example on page 48 uses this interpretation.)"
   },
   {
     "id": 44,
@@ -2161,7 +2161,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 30 + (30 × 3/5) = 48 cm",
       "D) 30 - (30 × 3/5) = 12 cm"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 30 × 3/5 = 18 cm (Reduced means 3 parts out of 5, or 3/5 of original)"
   },
   {
     "id": 45,
@@ -2172,7 +2172,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 1:00 p.m.",
       "D) 3:00 p.m."
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 1:00 p.m."
   },
   {
     "id": 46,
@@ -2183,7 +2183,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 15000 m",
       "D) 150000 m"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 15000 m"
   },
   {
     "id": 47,
@@ -2194,7 +2194,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 200 minutes (3*60 + 20)",
       "D) 120 minutes"
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "C) 200 minutes (3*60 + 20)"
   },
   {
     "id": 48,
@@ -2205,7 +2205,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 3600",
       "D) 10"
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) 60"
   },
   {
     "id": 49,
@@ -2216,7 +2216,7 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) 600",
       "D) 3600"
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "D) 3600"
   },
   {
     "id": 50,
@@ -2227,560 +2227,560 @@ export const mcqs: Record<string, MCQ[]> = {
       "C) Adding different units together.",
       "D) Removing units from a quantity."
     ],
-    "correctAnswer": "B"
+    "correctAnswer": "B) Expressing a quantity in different units."
   }
 ],
   "Financial Arithmetic": [
-{
-"id": 1,
-"questionText": "What is the full form of S.P. in financial arithmetic?",
-"options": [
-"A) Standard Price",
-"B) Selling Point",
-"C) Selling Price",
-"D) Sale Price"
-],
-"correctAnswer": "C"
-},
-{
-"id": 2,
-"questionText": "What is the full form of C.P. in financial arithmetic?",
-"options": [
-"A) Calculated Price",
-"B) Company Price",
-"C) Cost Price",
-"D) Current Price"
-],
-"correctAnswer": "C"
-},
-{
-"id": 3,
-"questionText": "How is Profit calculated?",
-"options": [
-"A) Cost Price - Selling Price",
-"B) Selling Price - Cost Price",
-"C) Cost Price + Selling Price",
-"D) Selling Price / Cost Price"
-],
-"correctAnswer": "B"
-},
-{
-"id": 4,
-"questionText": "How is Loss calculated?",
-"options": [
-"A) Cost Price - Selling Price",
-"B) Selling Price - Cost Price",
-"C) Cost Price + Selling Price",
-"D) Selling Price / Cost Price"
-],
-"correctAnswer": "A"
-},
-{
-"id": 5,
-"questionText": "What does it mean if S.P. > C.P.?",
-"options": [
-"A) There is a loss.",
-"B) There is a profit.",
-"C) There is no profit or loss.",
-"D) The item is discounted."
-],
-"correctAnswer": "B"
-},
-{
-"id": 6,
-"questionText": "What does it mean if S.P. < C.P.?",
-"options": [
-"A) There is a loss.",
-"B) There is a profit.",
-"C) There is no profit or loss.",
-"D) The item is taxed."
-],
-"correctAnswer": "A"
-},
-{
-"id": 7,
-"questionText": "How is Profit Percentage calculated?",
-"options": [
-"A) (Profit / Selling Price) × 100",
-"B) (Profit / Cost Price) × 100",
-"C) (Cost Price / Profit) × 100",
-"D) (Selling Price / Profit) × 100"
-],
-"correctAnswer": "B"
-},
-{
-"id": 8,
-"questionText": "How is Loss Percentage calculated?",
-"options": [
-"A) (Loss / Selling Price) × 100",
-"B) (Loss / Cost Price) × 100",
-"C) (Cost Price / Loss) × 100",
-"D) (Selling Price / Loss) × 100"
-],
-"correctAnswer": "B"
-},
-{
-"id": 9,
-"questionText": "If a laptop cost Rs. 65000 (C.P.) and was sold for Rs. 66000 (S.P.), what is the profit?",
-"options": [
-"A) Rs. 100",
-"B) Rs. 1000",
-"C) Rs. 65000",
-"D) Rs. 66000"
-],
-"correctAnswer": "B"
-},
-{
-"id": 10,
-"questionText": "If an item is bought for Rs. 12500 (C.P.) and sold for Rs. 10000 (S.P.), what is the discount given?",
-"options": [
-"A) Rs. 10000",
-"B) Rs. 12500",
-"C) Rs. 2500 (Marked price - Selling price)",
-"D) Rs. 22500"
-],
-"correctAnswer": "C"
-},
-{
-"id": 11,
-"questionText": "What is Income Tax?",
-"options": [
-"A) Tax on goods and services.",
-"B) Tax imposed by the government on the income of individuals.",
-"C) Tax on property.",
-"D) Tax on sales."
-],
-"correctAnswer": "B"
-},
-{
-"id": 12,
-"questionText": "What is Property Tax?",
-"options": [
-"A) A tax imposed by government on properties such as house, land, and shops.",
-"B) A tax on income.",
-"C) A tax on sales.",
-"D) A tax on goods."
-],
-"correctAnswer": "A"
-},
-{
-"id": 13,
-"questionText": "What is General Sales Tax (GST)?",
-"options": [
-"A) A tax on income.",
-"B) A tax on property.",
-"C) A tax on expensive items.",
-"D) A tax on goods and services provided by sellers."
-],
-"correctAnswer": "D"
-},
-{
-"id": 14,
-"questionText": "What is Value Added Tax (VAT)?",
-"options": [
-"A) A tax levied on the final sale price.",
-"B) A tax on income only.",
-"C) A tax imposed during production or distribution at each stage.",
-"D) A tax that replaces GST."
-],
-"correctAnswer": "C"
-},
-{
-"id": 15,
-"questionText": "What is Commission?",
-"options": [
-"A) An additional charge on a purchase.",
-"B) A tax on services.",
-"C) An amount of money paid to an employee or agent for services.",
-"D) A fixed salary."
-],
-"correctAnswer": "C"
-},
-{
-"id": 16,
-"questionText": "How is Zakat defined in Islam?",
-"options": [
-"A) Voluntary charity.",
-"B) One of the five pillars of Islam, mandatory charity on wealth.",
-"C) Tax on agriculture.",
-"D) Interest on savings."
-],
-"correctAnswer": "B"
-},
-{
-"id": 17,
-"questionText": "What is the rate of Zakat?",
-"options": [
-"A) 5%",
-"B) 10%",
-"C) 2.5%",
-"D) 15%"
-],
-"correctAnswer": "C"
-},
-{
-"id": 18,
-"questionText": "On what assets is Zakat typically paid?",
-"options": [
-"A) Only cash.",
-"B) Only property.",
-"C) Gold, silver, commercial goods, and cash.",
-"D) Only agricultural produce."
-],
-"correctAnswer": "C"
-},
-{
-"id": 19,
-"questionText": "What is Nisab for Zakat?",
-"options": [
-"A) The amount of profit.",
-"B) The total value of all assets.",
-"C) The minimum amount of annual savings on which Zakat has to be paid.",
-"D) The amount of tax."
-],
-"correctAnswer": "C"
-},
-{
-"id": 20,
-"questionText": "What is Ushr?",
-"options": [
-"A) Tax on property.",
-"B) Income tax.",
-"C) Agricultural tax imposed by government on land.",
-"D) Sales tax."
-],
-"correctAnswer": "C"
-},
-{
-"id": 21,
-"questionText": "What are the two rates of Ushr, based on the irrigation source?",
-"options": [
-"A) 2.5% and 5%",
-"B) 10% (natural sources) and 5% (artificial sources)",
-"C) 15% and 20%",
-"D) 7.5% and 12.5%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 22,
-"questionText": "If profit is Rs. 1000 and Cost Price is Rs. 65000, what is the profit percentage?",
-"options": [
-"A) 1.5%",
-"B) 1.54% (approx) (1000/65000 * 100 = 1.538%)",
-"C) 2.5%",
-"D) 10%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 23,
-"questionText": "If the C.P. of a watch is Rs. 1200 and S.P. is Rs. 1500, what is the profit percentage?",
-"options": [
-"A) 20%",
-"B) 25% ((1500-1200)/1200 * 100 = 300/1200 * 100 = 1/4 * 100 = 25%)",
-"C) 15%",
-"D) 30%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 24,
-"questionText": "If the C.P. of a watch is Rs. 1500 and S.P. is Rs. 1200, what is the loss percentage?",
-"options": [
-"A) 20%",
-"B) 20% ((1500-1200)/1500 * 100 = 300/1500 * 100 = 1/5 * 100 = 20%)",
-"C) 25%",
-"D) 15%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 25,
-"questionText": "What is the formula for Discount Percentage?",
-"options": [
-"A) (Discount / Selling Price) × 100",
-"B) (Discount / Marked Price) × 100",
-"C) (Discount / Cost Price) × 100",
-"D) (Marked Price / Discount) × 100"
-],
-"correctAnswer": "B"
-},
-{
-"id": 26,
-"questionText": "If a marked price of an electric heater is Rs. 4800 and it is sold for Rs. 4080, what is the discount percentage?",
-"options": [
-"A) 10%",
-"B) 15% ((4800-4080)/4800 * 100 = 720/4800 * 100 = 15%)",
-"C) 20%",
-"D) 5%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 27,
-"questionText": "Who is responsible for collecting income tax in Pakistan?",
-"options": [
-"A) Provincial Tax Board",
-"B) Federal Board of Revenue (FBR)",
-"C) Local Government",
-"D) Banks"
-],
-"correctAnswer": "B"
-},
-{
-"id": 28,
-"questionText": "If Ahmad's annual income is Rs. 800000, and the exempted amount is Rs. 600000, what is his taxable income?",
-"options": [
-"A) Rs. 800000",
-"B) Rs. 600000",
-"C) Rs. 200000",
-"D) Rs. 1400000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 29,
-"questionText": "If the rate of income tax is 2.5% on taxable income, and taxable income is Rs. 360000, what is the income tax?",
-"options": [
-"A) Rs. 7200",
-"B) Rs. 8000",
-"C) Rs. 9000 (360000 * 0.025)",
-"D) Rs. 10000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 30,
-"questionText": "If the price of a motorcycle is Rs. 110000 and GST is 17%, what is the amount of GST?",
-"options": [
-"A) Rs. 11000",
-"B) Rs. 17000",
-"C) Rs. 18700 (110000 * 0.17)",
-"D) Rs. 10000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 31,
-"questionText": "If the price of 10 fans is Rs. 60000 and GST is 17%, what is the total price payable?",
-"options": [
-"A) Rs. 60000",
-"B) Rs. 10200",
-"C) Rs. 70200 (60000 + 60000*0.17)",
-"D) Rs. 50000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 32,
-"questionText": "If a property sells for Rs. 4000000 and the commission rate is 2.5%, what is the commission amount?",
-"options": [
-"A) Rs. 40000",
-"B) Rs. 80000",
-"C) Rs. 100000 (4000000 * 0.025)",
-"D) Rs. 150000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 33,
-"questionText": "For calculation of Zakat, what is the equivalent amount of silver in tola?",
-"options": [
-"A) 7.5 tola",
-"B) 52.5 tola",
-"C) 612.36 grams or 52.5 tola (Note: The source has a discrepancy, stating 7.5 tola gold and 52.5 tola silver, but then giving the calculation for 52.5 tola silver as 612.36 grams. The 7.5 tola gold is 87.48 grams. I'll use 52.5 tola as the silver nisab.)",
-"D) 87.48 grams"
-],
-"correctAnswer": "C"
-},
-{
-"id": 34,
-"questionText": "If Aslam saved Rs. 200000 for one year, what is the Zakat due?",
-"options": [
-"A) Rs. 2000",
-"B) Rs. 4000",
-"C) Rs. 5000 (200000 * 0.025)",
-"D) Rs. 10000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 35,
-"questionText": "If Sadia had Rs. 15000 in gold and the Zakat rate is 2.5%, what is the Zakat?",
-"options": [
-"A) Rs. 150",
-"B) Rs. 250",
-"C) Rs. 375 (15000 * 0.025)",
-"D) Rs. 500"
-],
-"correctAnswer": "C"
-},
-{
-"id": 36,
-"questionText": "If Ahmad owns a house worth Rs. 450000 and property tax rate is 4.5%, what is the amount of tax?",
-"options": [
-"A) Rs. 18000",
-"B) Rs. 19500",
-"C) Rs. 20250 (450000 * 0.045)",
-"D) Rs. 21000"
-],
-"correctAnswer": "C"
-},
-{
-"id": 37,
-"questionText": "If Aslam owns a property of Rs. 22000 and the rate of tax is 2%, what is the tax?",
-"options": [
-"A) Rs. 220",
-"B) Rs. 330",
-"C) Rs. 440 (22000 * 0.02)",
-"D) Rs. 550"
-],
-"correctAnswer": "C"
-},
-{
-"id": 38,
-"questionText": "What type of tax is levied on the production and distribution of goods and services at each stage?",
-"options": [
-"A) Income Tax",
-"B) Property Tax",
-"C) Value Added Tax (VAT)",
-"D) Zakat"
-],
-"correctAnswer": "C"
-},
-{
-"id": 39,
-"questionText": "What is the rate of ushr for natural sources of irrigation?",
-"options": [
-"A) 2.5%",
-"B) 5%",
-"C) 10%",
-"D) 20%"
-],
-"correctAnswer": "C"
-},
-{
-"id": 40,
-"questionText": "What is the rate of ushr for artificial sources of irrigation (like tube-wells)?",
-"options": [
-"A) 2.5%",
-"B) 5%",
-"C) 10%",
-"D) 20%"
-],
-"correctAnswer": "B"
-},
-{
-"id": 41,
-"questionText": "If 2300 kg onion is irrigated by natural source, what is the amount of ushr at 10%?",
-"options": [
-"A) 23 kg",
-"B) 230 kg",
-"C) 460 kg",
-"D) 115 kg"
-],
-"correctAnswer": "B"
-},
-{
-"id": 42,
-"questionText": "If 1400 kg ginger is irrigated by artificial source, what is the amount of ushr at 5%?",
-"options": [
-"A) 14 kg",
-"B) 70 kg",
-"C) 140 kg",
-"D) 28 kg"
-],
-"correctAnswer": "B"
-},
-{
-"id": 43,
-"questionText": "What is the purpose of Financial Arithmetic?",
-"options": [
-"A) To study geometry",
-"B) To solve algebraic equations",
-"C) To solve real-world problems involving profit, loss, discount, tax, zakat, and ushr.",
-"D) To manage data"
-],
-"correctAnswer": "C"
-},
-{
-"id": 44,
-"questionText": "Which term describes the original price of an item before any discount or profit?",
-"options": [
-"A) Selling Price",
-"B) Discount Price",
-"C) Cost Price",
-"D) Marked Price (implied by Discount definition)"
-],
-"correctAnswer": "D"
-},
-{
-"id": 45,
-"questionText": "If a shopkeeper purchases a bag for Rs. 500 and sells it for Rs. 550, what is the profit?",
-"options": [
-"A) Rs. 5",
-"B) Rs. 10",
-"C) Rs. 50",
-"D) Rs. 100"
-],
-"correctAnswer": "C"
-},
-{
-"id": 46,
-"questionText": "If a shopkeeper purchases a bag for Rs. 500 and sells it for Rs. 450, what is the loss?",
-"options": [
-"A) Rs. 5",
-"B) Rs. 10",
-"C) Rs. 50",
-"D) Rs. 100"
-],
-"correctAnswer": "C"
-},
-{
-"id": 47,
-"questionText": "What does discount mean?",
-"options": [
-"A) An increase in price.",
-"B) The original price.",
-"C) Reduction offered on the marked price.",
-"D) Extra charges."
-],
-"correctAnswer": "C"
-},
-{
-"id": 48,
-"questionText": "What are the pillars of Islam, one of which Zakat is a part of?",
-"options": [
-"A) 3",
-"B) 4",
-"C) 5",
-"D) 6"
-],
-"correctAnswer": "C"
-},
-{
-"id": 49,
-"questionText": "What is the total income of Ahmad if his annual income is Rs. 800000, and exempted is Rs. 600000?",
-"options": [
-"A) Gross Income is Rs. 800000.",
-"B) Taxable income is Rs. 200000.",
-"C) Income after tax is Rs. 791000.",
-"D) Exempted income is Rs. 600000."
-],
-"correctAnswer": "A"
-},
-{
-"id": 50,
-"questionText": "What type of goods and services is GST typically applied to?",
-"options": [
-"A) Only luxury items.",
-"B) Only essential goods.",
-"C) Most goods and services.",
-"D) Only services."
-],
-"correctAnswer": "C"
-}
+  {
+    "id": 1,
+    "questionText": "What is the full form of S.P. in financial arithmetic?",
+    "options": [
+      "A) Standard Price",
+      "B) Selling Point",
+      "C) Selling Price",
+      "D) Sale Price"
+    ],
+    "correctAnswer": "C) Selling Price"
+  },
+  {
+    "id": 2,
+    "questionText": "What is the full form of C.P. in financial arithmetic?",
+    "options": [
+      "A) Calculated Price",
+      "B) Company Price",
+      "C) Cost Price",
+      "D) Current Price"
+    ],
+    "correctAnswer": "C) Cost Price"
+  },
+  {
+    "id": 3,
+    "questionText": "How is Profit calculated?",
+    "options": [
+      "A) Cost Price - Selling Price",
+      "B) Selling Price - Cost Price",
+      "C) Cost Price + Selling Price",
+      "D) Selling Price / Cost Price"
+    ],
+    "correctAnswer": "B) Selling Price - Cost Price"
+  },
+  {
+    "id": 4,
+    "questionText": "How is Loss calculated?",
+    "options": [
+      "A) Cost Price - Selling Price",
+      "B) Selling Price - Cost Price",
+      "C) Cost Price + Selling Price",
+      "D) Selling Price / Cost Price"
+    ],
+    "correctAnswer": "A) Cost Price - Selling Price"
+  },
+  {
+    "id": 5,
+    "questionText": "What does it mean if S.P. > C.P.?",
+    "options": [
+      "A) There is a loss.",
+      "B) There is a profit.",
+      "C) There is no profit or loss.",
+      "D) The item is discounted."
+    ],
+    "correctAnswer": "B) There is a profit."
+  },
+  {
+    "id": 6,
+    "questionText": "What does it mean if S.P. < C.P.?",
+    "options": [
+      "A) There is a loss.",
+      "B) There is a profit.",
+      "C) There is no profit or loss.",
+      "D) The item is taxed."
+    ],
+    "correctAnswer": "A) There is a loss."
+  },
+  {
+    "id": 7,
+    "questionText": "How is Profit Percentage calculated?",
+    "options": [
+      "A) (Profit / Selling Price) × 100",
+      "B) (Profit / Cost Price) × 100",
+      "C) (Cost Price / Profit) × 100",
+      "D) (Selling Price / Profit) × 100"
+    ],
+    "correctAnswer": "B) (Profit / Cost Price) × 100"
+  },
+  {
+    "id": 8,
+    "questionText": "How is Loss Percentage calculated?",
+    "options": [
+      "A) (Loss / Selling Price) × 100",
+      "B) (Loss / Cost Price) × 100",
+      "C) (Cost Price / Loss) × 100",
+      "D) (Selling Price / Loss) × 100"
+    ],
+    "correctAnswer": "B) (Loss / Cost Price) × 100"
+  },
+  {
+    "id": 9,
+    "questionText": "If a laptop cost Rs. 65000 (C.P.) and was sold for Rs. 66000 (S.P.), what is the profit?",
+    "options": [
+      "A) Rs. 100",
+      "B) Rs. 1000",
+      "C) Rs. 65000",
+      "D) Rs. 66000"
+    ],
+    "correctAnswer": "B) Rs. 1000"
+  },
+  {
+    "id": 10,
+    "questionText": "If an item is bought for Rs. 12500 (C.P.) and sold for Rs. 10000 (S.P.), what is the discount given?",
+    "options": [
+      "A) Rs. 10000",
+      "B) Rs. 12500",
+      "C) Rs. 2500 (Marked price - Selling price)",
+      "D) Rs. 22500"
+    ],
+    "correctAnswer": "C) Rs. 2500 (Marked price - Selling price)"
+  },
+  {
+    "id": 11,
+    "questionText": "What is Income Tax?",
+    "options": [
+      "A) Tax on goods and services.",
+      "B) Tax imposed by the government on the income of individuals.",
+      "C) Tax on property.",
+      "D) Tax on sales."
+    ],
+    "correctAnswer": "B) Tax imposed by the government on the income of individuals."
+  },
+  {
+    "id": 12,
+    "questionText": "What is Property Tax?",
+    "options": [
+      "A) A tax imposed by government on properties such as house, land, and shops.",
+      "B) A tax on income.",
+      "C) A tax on sales.",
+      "D) A tax on goods."
+    ],
+    "correctAnswer": "A) A tax imposed by government on properties such as house, land, and shops."
+  },
+  {
+    "id": 13,
+    "questionText": "What is General Sales Tax (GST)?",
+    "options": [
+      "A) A tax on income.",
+      "B) A tax on property.",
+      "C) A tax on expensive items.",
+      "D) A tax on goods and services provided by sellers."
+    ],
+    "correctAnswer": "D) A tax on goods and services provided by sellers."
+  },
+  {
+    "id": 14,
+    "questionText": "What is Value Added Tax (VAT)?",
+    "options": [
+      "A) A tax levied on the final sale price.",
+      "B) A tax on income only.",
+      "C) A tax imposed during production or distribution at each stage.",
+      "D) A tax that replaces GST."
+    ],
+    "correctAnswer": "C) A tax imposed during production or distribution at each stage."
+  },
+  {
+    "id": 15,
+    "questionText": "What is Commission?",
+    "options": [
+      "A) An additional charge on a purchase.",
+      "B) A tax on services.",
+      "C) An amount of money paid to an employee or agent for services.",
+      "D) A fixed salary."
+    ],
+    "correctAnswer": "C) An amount of money paid to an employee or agent for services."
+  },
+  {
+    "id": 16,
+    "questionText": "How is Zakat defined in Islam?",
+    "options": [
+      "A) Voluntary charity.",
+      "B) One of the five pillars of Islam, mandatory charity on wealth.",
+      "C) Tax on agriculture.",
+      "D) Interest on savings."
+    ],
+    "correctAnswer": "B) One of the five pillars of Islam, mandatory charity on wealth."
+  },
+  {
+    "id": 17,
+    "questionText": "What is the rate of Zakat?",
+    "options": [
+      "A) 5%",
+      "B) 10%",
+      "C) 2.5%",
+      "D) 15%"
+    ],
+    "correctAnswer": "C) 2.5%"
+  },
+  {
+    "id": 18,
+    "questionText": "On what assets is Zakat typically paid?",
+    "options": [
+      "A) Only cash.",
+      "B) Only property.",
+      "C) Gold, silver, commercial goods, and cash.",
+      "D) Only agricultural produce."
+    ],
+    "correctAnswer": "C) Gold, silver, commercial goods, and cash."
+  },
+  {
+    "id": 19,
+    "questionText": "What is Nisab for Zakat?",
+    "options": [
+      "A) The amount of profit.",
+      "B) The total value of all assets.",
+      "C) The minimum amount of annual savings on which Zakat has to be paid.",
+      "D) The amount of tax."
+    ],
+    "correctAnswer": "C) The minimum amount of annual savings on which Zakat has to be paid."
+  },
+  {
+    "id": 20,
+    "questionText": "What is Ushr?",
+    "options": [
+      "A) Tax on property.",
+      "B) Income tax.",
+      "C) Agricultural tax imposed by government on land.",
+      "D) Sales tax."
+    ],
+    "correctAnswer": "C) Agricultural tax imposed by government on land."
+  },
+  {
+    "id": 21,
+    "questionText": "What are the two rates of Ushr, based on the irrigation source?",
+    "options": [
+      "A) 2.5% and 5%",
+      "B) 10% (natural sources) and 5% (artificial sources)",
+      "C) 15% and 20%",
+      "D) 7.5% and 12.5%"
+    ],
+    "correctAnswer": "B) 10% (natural sources) and 5% (artificial sources)"
+  },
+  {
+    "id": 22,
+    "questionText": "If profit is Rs. 1000 and Cost Price is Rs. 65000, what is the profit percentage?",
+    "options": [
+      "A) 1.5%",
+      "B) 1.54% (approx) (1000/65000 * 100 = 1.538%)",
+      "C) 2.5%",
+      "D) 10%"
+    ],
+    "correctAnswer": "B) 1.54% (approx) (1000/65000 * 100 = 1.538%)"
+  },
+  {
+    "id": 23,
+    "questionText": "If the C.P. of a watch is Rs. 1200 and S.P. is Rs. 1500, what is the profit percentage?",
+    "options": [
+      "A) 20%",
+      "B) 25% ((1500-1200)/1200 * 100 = 300/1200 * 100 = 1/4 * 100 = 25%)",
+      "C) 15%",
+      "D) 30%"
+    ],
+    "correctAnswer": "B) 25% ((1500-1200)/1200 * 100 = 300/1200 * 100 = 1/4 * 100 = 25%)"
+  },
+  {
+    "id": 24,
+    "questionText": "If the C.P. of a watch is Rs. 1500 and S.P. is Rs. 1200, what is the loss percentage?",
+    "options": [
+      "A) 20%",
+      "B) 20% ((1500-1200)/1500 * 100 = 300/1500 * 100 = 1/5 * 100 = 20%)",
+      "C) 25%",
+      "D) 15%"
+    ],
+    "correctAnswer": "B) 20% ((1500-1200)/1500 * 100 = 300/1500 * 100 = 1/5 * 100 = 20%)"
+  },
+  {
+    "id": 25,
+    "questionText": "What is the formula for Discount Percentage?",
+    "options": [
+      "A) (Discount / Selling Price) × 100",
+      "B) (Discount / Marked Price) × 100",
+      "C) (Discount / Cost Price) × 100",
+      "D) (Marked Price / Discount) × 100"
+    ],
+    "correctAnswer": "B) (Discount / Marked Price) × 100"
+  },
+  {
+    "id": 26,
+    "questionText": "If a marked price of an electric heater is Rs. 4800 and it is sold for Rs. 4080, what is the discount percentage?",
+    "options": [
+      "A) 10%",
+      "B) 15% ((4800-4080)/4800 * 100 = 720/4800 * 100 = 15%)",
+      "C) 20%",
+      "D) 5%"
+    ],
+    "correctAnswer": "B) 15% ((4800-4080)/4800 * 100 = 720/4800 * 100 = 15%)"
+  },
+  {
+    "id": 27,
+    "questionText": "Who is responsible for collecting income tax in Pakistan?",
+    "options": [
+      "A) Provincial Tax Board",
+      "B) Federal Board of Revenue (FBR)",
+      "C) Local Government",
+      "D) Banks"
+    ],
+    "correctAnswer": "B) Federal Board of Revenue (FBR)"
+  },
+  {
+    "id": 28,
+    "questionText": "If Ahmad's annual income is Rs. 800000, and the exempted amount is Rs. 600000, what is his taxable income?",
+    "options": [
+      "A) Rs. 800000",
+      "B) Rs. 600000",
+      "C) Rs. 200000",
+      "D) Rs. 1400000"
+    ],
+    "correctAnswer": "C) Rs. 200000"
+  },
+  {
+    "id": 29,
+    "questionText": "If the rate of income tax is 2.5% on taxable income, and taxable income is Rs. 360000, what is the income tax?",
+    "options": [
+      "A) Rs. 7200",
+      "B) Rs. 8000",
+      "C) Rs. 9000 (360000 * 0.025)",
+      "D) Rs. 10000"
+    ],
+    "correctAnswer": "C) Rs. 9000 (360000 * 0.025)"
+  },
+  {
+    "id": 30,
+    "questionText": "If the price of a motorcycle is Rs. 110000 and GST is 17%, what is the amount of GST?",
+    "options": [
+      "A) Rs. 11000",
+      "B) Rs. 17000",
+      "C) Rs. 18700 (110000 * 0.17)",
+      "D) Rs. 10000"
+    ],
+    "correctAnswer": "C) Rs. 18700 (110000 * 0.17)"
+  },
+  {
+    "id": 31,
+    "questionText": "If the price of 10 fans is Rs. 60000 and GST is 17%, what is the total price payable?",
+    "options": [
+      "A) Rs. 60000",
+      "B) Rs. 10200",
+      "C) Rs. 70200 (60000 + 60000*0.17)",
+      "D) Rs. 50000"
+    ],
+    "correctAnswer": "C) Rs. 70200 (60000 + 60000*0.17)"
+  },
+  {
+    "id": 32,
+    "questionText": "If a property sells for Rs. 4000000 and the commission rate is 2.5%, what is the commission amount?",
+    "options": [
+      "A) Rs. 40000",
+      "B) Rs. 80000",
+      "C) Rs. 100000 (4000000 * 0.025)",
+      "D) Rs. 150000"
+    ],
+    "correctAnswer": "C) Rs. 100000 (4000000 * 0.025)"
+  },
+  {
+    "id": 33,
+    "questionText": "For calculation of Zakat, what is the equivalent amount of silver in tola?",
+    "options": [
+      "A) 7.5 tola",
+      "B) 52.5 tola",
+      "C) 612.36 grams or 52.5 tola (Note: The source has a discrepancy, stating 7.5 tola gold and 52.5 tola silver, but then giving the calculation for 52.5 tola silver as 612.36 grams. The 7.5 tola gold is 87.48 grams. I'll use 52.5 tola as the silver nisab.)",
+      "D) 87.48 grams"
+    ],
+    "correctAnswer": "C) 612.36 grams or 52.5 tola (Note: The source has a discrepancy, stating 7.5 tola gold and 52.5 tola silver, but then giving the calculation for 52.5 tola silver as 612.36 grams. The 7.5 tola gold is 87.48 grams. I'll use 52.5 tola as the silver nisab.)"
+  },
+  {
+    "id": 34,
+    "questionText": "If Aslam saved Rs. 200000 for one year, what is the Zakat due?",
+    "options": [
+      "A) Rs. 2000",
+      "B) Rs. 4000",
+      "C) Rs. 5000 (200000 * 0.025)",
+      "D) Rs. 10000"
+    ],
+    "correctAnswer": "C) Rs. 5000 (200000 * 0.025)"
+  },
+  {
+    "id": 35,
+    "questionText": "If Sadia had Rs. 15000 in gold and the Zakat rate is 2.5%, what is the Zakat?",
+    "options": [
+      "A) Rs. 150",
+      "B) Rs. 250",
+      "C) Rs. 375 (15000 * 0.025)",
+      "D) Rs. 500"
+    ],
+    "correctAnswer": "C) Rs. 375 (15000 * 0.025)"
+  },
+  {
+    "id": 36,
+    "questionText": "If Ahmad owns a house worth Rs. 450000 and property tax rate is 4.5%, what is the amount of tax?",
+    "options": [
+      "A) Rs. 18000",
+      "B) Rs. 19500",
+      "C) Rs. 20250 (450000 * 0.045)",
+      "D) Rs. 21000"
+    ],
+    "correctAnswer": "C) Rs. 20250 (450000 * 0.045)"
+  },
+  {
+    "id": 37,
+    "questionText": "If Aslam owns a property of Rs. 22000 and the rate of tax is 2%, what is the tax?",
+    "options": [
+      "A) Rs. 220",
+      "B) Rs. 330",
+      "C) Rs. 440 (22000 * 0.02)",
+      "D) Rs. 550"
+    ],
+    "correctAnswer": "C) Rs. 440 (22000 * 0.02)"
+  },
+  {
+    "id": 38,
+    "questionText": "What type of tax is levied on the production and distribution of goods and services at each stage?",
+    "options": [
+      "A) Income Tax",
+      "B) Property Tax",
+      "C) Value Added Tax (VAT)",
+      "D) Zakat"
+    ],
+    "correctAnswer": "C) Value Added Tax (VAT)"
+  },
+  {
+    "id": 39,
+    "questionText": "What is the rate of ushr for natural sources of irrigation?",
+    "options": [
+      "A) 2.5%",
+      "B) 5%",
+      "C) 10%",
+      "D) 20%"
+    ],
+    "correctAnswer": "C) 10%"
+  },
+  {
+    "id": 40,
+    "questionText": "What is the rate of ushr for artificial sources of irrigation (like tube-wells)?",
+    "options": [
+      "A) 2.5%",
+      "B) 5%",
+      "C) 10%",
+      "D) 20%"
+    ],
+    "correctAnswer": "B) 5%"
+  },
+  {
+    "id": 41,
+    "questionText": "If 2300 kg onion is irrigated by natural source, what is the amount of ushr at 10%?",
+    "options": [
+      "A) 23 kg",
+      "B) 230 kg",
+      "C) 460 kg",
+      "D) 115 kg"
+    ],
+    "correctAnswer": "B) 230 kg"
+  },
+  {
+    "id": 42,
+    "questionText": "If 1400 kg ginger is irrigated by artificial source, what is the amount of ushr at 5%?",
+    "options": [
+      "A) 14 kg",
+      "B) 70 kg",
+      "C) 140 kg",
+      "D) 28 kg"
+    ],
+    "correctAnswer": "B) 70 kg"
+  },
+  {
+    "id": 43,
+    "questionText": "What is the purpose of Financial Arithmetic?",
+    "options": [
+      "A) To study geometry",
+      "B) To solve algebraic equations",
+      "C) To solve real-world problems involving profit, loss, discount, tax, zakat, and ushr.",
+      "D) To manage data"
+    ],
+    "correctAnswer": "C) To solve real-world problems involving profit, loss, discount, tax, zakat, and ushr."
+  },
+  {
+    "id": 44,
+    "questionText": "Which term describes the original price of an item before any discount or profit?",
+    "options": [
+      "A) Selling Price",
+      "B) Discount Price",
+      "C) Cost Price",
+      "D) Marked Price (implied by Discount definition)"
+    ],
+    "correctAnswer": "D) Marked Price (implied by Discount definition)"
+  },
+  {
+    "id": 45,
+    "questionText": "If a shopkeeper purchases a bag for Rs. 500 and sells it for Rs. 550, what is the profit?",
+    "options": [
+      "A) Rs. 5",
+      "B) Rs. 10",
+      "C) Rs. 50",
+      "D) Rs. 100"
+    ],
+    "correctAnswer": "C) Rs. 50"
+  },
+  {
+    "id": 46,
+    "questionText": "If a shopkeeper purchases a bag for Rs. 500 and sells it for Rs. 450, what is the loss?",
+    "options": [
+      "A) Rs. 5",
+      "B) Rs. 10",
+      "C) Rs. 50",
+      "D) Rs. 100"
+    ],
+    "correctAnswer": "C) Rs. 50"
+  },
+  {
+    "id": 47,
+    "questionText": "What does discount mean?",
+    "options": [
+      "A) An increase in price.",
+      "B) The original price.",
+      "C) Reduction offered on the marked price.",
+      "D) Extra charges."
+    ],
+    "correctAnswer": "C) Reduction offered on the marked price."
+  },
+  {
+    "id": 48,
+    "questionText": "What are the pillars of Islam, one of which Zakat is a part of?",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 5",
+      "D) 6"
+    ],
+    "correctAnswer": "C) 5"
+  },
+  {
+    "id": 49,
+    "questionText": "What is the total income of Ahmad if his annual income is Rs. 800000, and exempted is Rs. 600000?",
+    "options": [
+      "A) Gross Income is Rs. 800000.",
+      "B) Taxable income is Rs. 200000.",
+      "C) Income after tax is Rs. 791000.",
+      "D) Exempted income is Rs. 600000."
+    ],
+    "correctAnswer": "A) Gross Income is Rs. 800000."
+  },
+  {
+    "id": 50,
+    "questionText": "What type of goods and services is GST typically applied to?",
+    "options": [
+      "A) Only luxury items.",
+      "B) Only essential goods.",
+      "C) Most goods and services.",
+      "D) Only services."
+    ],
+    "correctAnswer": "C) Most goods and services."
+  }
 ],
   "Squares and Square Roots": [
   {

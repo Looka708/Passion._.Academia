@@ -179,16 +179,21 @@ export default function Header() {
         
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
          {isAuthenticated ? (
-            <>
+            <div className="flex items-center gap-2">
               {user?.role === 'admin' && (
-                <Button asChild variant="outline">
-                    <Link href="/admin">Admin</Link>
-                </Button>
+                <>
+                    <Button asChild variant="outline">
+                        <Link href="/admin">Admin</Link>
+                    </Button>
+                    <Button asChild>
+                        <Link href="/admin/exam-generator">Exam Generator</Link>
+                    </Button>
+                </>
               )}
               <Button onClick={logout} variant="ghost" size="icon" aria-label="Sign out">
                 <LogOut className="h-5 w-5" />
               </Button>
-            </>
+            </div>
           ) : (
             <Button asChild>
               <Link href="/signin">Login</Link>
