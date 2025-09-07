@@ -15,7 +15,7 @@ export const subjects = [
     href: "/classes/10/english"
   },
   {
-    name: "Urdu",
+    name: "Urdu Grammar",
     icon: Languages,
     description: "Deepen your understanding of Urdu literature, grammar, and composition.",
     href: "/classes/10/urdu"

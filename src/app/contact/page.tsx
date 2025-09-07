@@ -80,12 +80,12 @@ export default function ContactPage() {
 
                     <div className="flex space-x-4">
                         <Button asChild variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
-                            <a href="#" aria-label="YouTube">
+                            <a href="https://www.youtube.com/@GHSMalakwalByNadeemSabri" aria-label="YouTube">
                             <Youtube className="h-5 w-5" />
                             </a>
                         </Button>
                         <Button asChild variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
-                            <a href="#" aria-label="Instagram">
+                            <a href="https://www.instagram.com/sabri_hit/" aria-label="Instagram">
                             <Instagram className="h-5 w-5" />
                             </a>
                         </Button>

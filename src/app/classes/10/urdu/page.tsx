@@ -19,7 +19,7 @@ export default function Class10UrduPage() {
         <section className="container mx-auto px-4 py-12 sm:py-16 md:py-24">
             <div className="mb-12 text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-primary font-urdu">
-                کلاس 10 اردو
+                                کلاس 10 اردو گرامر
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground font-urdu">
                 اپنی ٹیسٹ کی تیاری شروع کرنے کے لیے ایک باب منتخب کریں۔

@@ -22,7 +22,7 @@ export default async function Class6UrduChapterPage({ params }: { params: Promis
   return (
     <TestPageClient
         grade="6"
-        subject="Urdu"
+        subject="Urdu Grammar"
         chapterTitle={chapterTitle}
         chapterMcqs={chapterMcqs}
         basePath={basePath}

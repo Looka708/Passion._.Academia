@@ -8,7 +8,7 @@ import { ProtectedRoute } from "@/components/protected-route";
 const subjects = [
   { name: "Mathematics", icon: Sigma, description: "Prepare for higher-level concepts with advanced algebra and geometry.", href: "/classes/8/mathematics" },
   { name: "English", icon: Book, description: "Focus on literature analysis, formal writing, and public speaking.", href: "/classes/8/english" },
-  { name: "Urdu", icon: Languages, description: "Master Urdu grammar, essay writing, and poetry analysis.", href: "/classes/8/urdu" },
+  { name: "Urdu Grammar", icon: Languages, description: "Master Urdu grammar, essay writing, and poetry analysis.", href: "/classes/8/urdu" },
   { name: "General Science", icon: Atom, description: "Study complex topics in physics, chemistry, and biology for board exams.", href: "/classes/8/general-science" },
   { name: "Computer", icon: Laptop, description: "Introduction to programming concepts and digital citizenship.", href: "/classes/8/computer" },
 ];

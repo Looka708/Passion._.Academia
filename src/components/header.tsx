@@ -82,7 +82,7 @@ export default function Header() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="px-0 text-sm font-medium transition-colors hover:bg-transparent hover:text-primary focus-visible:ring-0 focus-visible:ring-offset-0">
-                  Tests <ChevronDown className="ml-1 h-4 w-4" />
+                  Special <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -136,7 +136,7 @@ export default function Header() {
                 ))}
                 <Accordion type="single" collapsible>
                   <AccordionItem value="tests" className="border-b-0">
-                    <AccordionTrigger className="py-2 text-muted-foreground transition-colors hover:text-primary hover:no-underline">Tests</AccordionTrigger>
+                    <AccordionTrigger className="py-2 text-muted-foreground transition-colors hover:text-primary hover:no-underline">Special</AccordionTrigger>
                     <AccordionContent className="pl-4">
                       <div className="flex flex-col space-y-3">
                       {testLinks.map((link) => (

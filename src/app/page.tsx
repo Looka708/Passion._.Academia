@@ -118,11 +118,6 @@ export default function Home() {
                   Get Started
                 </Link>
               </Button>
-               <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-                <Link href="/contact">
-                  Get free trial
-                </Link>
-              </Button>
             </div>
           </div>
           <div className="relative flex h-full min-h-[400px] w-full items-center justify-center">

@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Book, Sigma, Atom, FlaskConical, ArrowRight, Dna, Laptop } from "lucide-react";
+import { Book, Sigma, Atom, FlaskConical, ArrowRight, Dna, Laptop, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ProtectedRoute } from "@/components/protected-route";
@@ -12,6 +12,7 @@ const subjects = [
   { name: "Chemistry", icon: FlaskConical, description: "Cover fundamentals of chemistry, chemical bonding, and electrochemistry.", href: "/classes/9/chemistry" },
   { name: "Biology", icon: Dna, description: "Explore the fascinating world of living organisms, cells, and ecosystems.", href: "/classes/9/biology" },
   { name: "Computer", icon: Laptop, description: "Introduction to computer hardware, software, and programming logic.", href: "/classes/9/computer" },
+  { name: "Urdu Grammar", icon: Languages, description: "Master Urdu grammar, essay writing, and poetry analysis.", href: "/classes/9/urdu" }
 ];
 
 export default function Class9Page() {
