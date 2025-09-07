@@ -10,13 +10,22 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
 import { MCQ } from "@/lib/types";
-import { courses, CourseName, SubjectName, ChapterName } from "@/lib/data/all-courses";
+import { courses, CourseName } from "@/lib/data/all-courses";
 
 type GeneratedExam = {
   mcqs: MCQ[];
   shortQuestions: string[];
   longQuestions: string[];
 };
+
+// Define a generic type for a subject to help TypeScript understand the structure
+type Subject = {
+    chapters: string[];
+    mcqs: Record<string, MCQ[]>;
+    shortQuestions: Record<string, string[]>;
+    longQuestions: Record<string, string[]>;
+};
+
 
 export default function ExamGeneratorPage() {
   const [selectedCourse, setSelectedCourse] = useState<CourseName | "">("");
@@ -50,20 +59,26 @@ export default function ExamGeneratorPage() {
 
   const getAvailableMcqs = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
-    return subjectData?.mcqs[selectedChapter as keyof typeof subjectData.mcqs] || [];
+    const courseData = courses[selectedCourse as CourseName];
+    // Cast to the specific Subject type to resolve the TypeScript error
+    const subjectData = courseData.subjects[selectedSubject] as Subject; 
+    return subjectData?.mcqs?.[selectedChapter] || [];
   };
 
   const getAvailableShortQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
-    return subjectData?.shortQuestions[selectedChapter as keyof typeof subjectData.shortQuestions] || [];
+    const courseData = courses[selectedCourse as CourseName];
+    // Cast to the specific Subject type to resolve the TypeScript error
+    const subjectData = courseData.subjects[selectedSubject] as Subject;
+    return subjectData?.shortQuestions?.[selectedChapter] || [];
   };
 
   const getAvailableLongQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
-    return subjectData?.longQuestions[selectedChapter as keyof typeof subjectData.longQuestions] || [];
+    const courseData = courses[selectedCourse as CourseName];
+    // Cast to the specific Subject type to resolve the TypeScript error
+    const subjectData = courseData.subjects[selectedSubject] as Subject;
+    return subjectData?.longQuestions?.[selectedChapter] || [];
   };
 
   const handleGenerateExam = () => {
@@ -155,7 +170,7 @@ export default function ExamGeneratorPage() {
                             <SelectValue placeholder="Select a Chapter" />
                         </SelectTrigger>
                         <SelectContent>
-                            {courses[selectedCourse as CourseName].subjects[selectedSubject as SubjectName<CourseName>].chapters.map(chapter => (
+                            {(courses[selectedCourse as CourseName].subjects[selectedSubject] as Subject)?.chapters.map(chapter => (
                                 <SelectItem key={chapter} value={chapter}>{chapter}</SelectItem>
                             ))}
                         </SelectContent>
@@ -233,9 +248,9 @@ export default function ExamGeneratorPage() {
                         <h3 className="text-lg font-semibold border-b pb-2 mb-4">Multiple Choice Questions</h3>
                         <ol className="mcq-list">
                         {generatedExam.mcqs.map((mcq, index) => (
-                            <li key={`mcq-${index}`} className="question">
-                                <p>{mcq.questionText}</p>
-                                <ul className="options list-alpha-lower list-inside mt-2">
+                            <li key={`mcq-${index}`} className="question mb-2">
+                                <p>{index + 1}. {mcq.questionText}</p>
+                                <ul className="options list-alpha-lower list-inside mt-1 pl-4">
                                     {mcq.options.map((option, optIndex) => (
                                         <li key={optIndex} className="option">
                                             {typeof option === 'string' ? option : option.label}
@@ -282,5 +297,3 @@ export default function ExamGeneratorPage() {
 // for the options a, b, c, d...
 // e.g. .list-alpha-lower { list-style-type: lower-alpha; }
 
-
-    
