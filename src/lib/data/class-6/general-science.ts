@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './general-science-short-questions';
+import { longQuestions as longQuestionsData } from './general-science-long-questions';
 
 export const chapters = [
   "Cellular Organization",
@@ -642,3 +644,14 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What is the composition of the Sun primarily made of?", "options": ["Rocks and metals.", "Hydrogen and Helium.", "Water and ice.", "Oxygen and carbon dioxide."], "correctAnswer": "Hydrogen and Helium." }
   ]
 }
+export const shortQuestions = {
+    "The Human Body": shortQuestionsData.slice(0, 3),
+    "Plants": shortQuestionsData.slice(3, 6),
+    "Matter and Materials": shortQuestionsData.slice(6, 10),
+};
+
+export const longQuestions = {
+    "The Human Body": longQuestionsData.slice(0, 2),
+    "Plants": longQuestionsData.slice(2, 4),
+    "Matter and Materials": longQuestionsData.slice(4, 5),
+};

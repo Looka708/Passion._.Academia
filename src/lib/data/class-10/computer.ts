@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
+
 
 export const chapters = [
   "Programming in C",
@@ -41,4 +44,18 @@ export const mcqs: Record<string, MCQ[]> = {
       "correctAnswer": "if",
     },
   ]
+};
+
+export const shortQuestions = {
+    "Programming in C": shortQuestionsData.slice(0, 3),
+    "User Interface": shortQuestionsData.slice(3, 5),
+    "Data Types and Variables": shortQuestionsData.slice(5, 8),
+    "Control Structures": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Programming in C": longQuestionsData.slice(0, 2),
+    "User Interface": longQuestionsData.slice(2, 3),
+    "Data Types and Variables": longQuestionsData.slice(3, 4),
+    "Control Structures": longQuestionsData.slice(4, 5),
 };

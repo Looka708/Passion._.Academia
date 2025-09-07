@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
+
 
 export const chapters = [
   "Tolerance of the Rasoolullah (Universally desired personality traits)",
@@ -6391,4 +6394,16 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "a) Make students aware that good writing involves constant proofreading and editing."
   }
 ],
+};
+
+export const shortQuestions = {
+    "Paragraph Writing": shortQuestionsData.slice(0, 4),
+    "Formal and Informal Letters": shortQuestionsData.slice(4, 7),
+    "Figures of Speech": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Paragraph Writing": longQuestionsData.slice(0, 2),
+    "Formal and Informal Letters": longQuestionsData.slice(2, 4),
+    "Figures of Speech": longQuestionsData.slice(4, 5),
 };

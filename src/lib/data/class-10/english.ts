@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
+
 
 export const chapters = [
   "Advanced Grammar",
@@ -54,4 +57,18 @@ export const mcqs: Record<string, MCQ[]> = {
       "correctAnswer": "A thesis statement",
     },
   ]
+};
+
+export const shortQuestions = {
+    "Advanced Grammar": shortQuestionsData.slice(0, 3),
+    "Idioms and Phrases": shortQuestionsData.slice(3, 6),
+    "Translation": shortQuestionsData.slice(6, 8),
+    "Essay Writing": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Advanced Grammar": longQuestionsData.slice(0, 1),
+    "Idioms and Phrases": longQuestionsData.slice(1, 2),
+    "Translation": longQuestionsData.slice(2, 4),
+    "Essay Writing": longQuestionsData.slice(4, 5),
 };

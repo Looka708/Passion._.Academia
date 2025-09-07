@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './mathematics-short-questions';
+import { longQuestions as longQuestionsData } from './mathematics-long-questions';
+
 
 // =================================================================================
 // 1. CHAPTERS
@@ -140,4 +143,20 @@ export const mcqs: Record<string, MCQ[]> = {
         "correctAnswer": "7"
     }
   ]
+};
+
+export const shortQuestions = {
+    "Quadratic Equations": shortQuestionsData.slice(0, 3),
+    "Theory of Quadratic Equations": shortQuestionsData.slice(3, 5),
+    "Variations": shortQuestionsData.slice(5, 7),
+    "Partial Fractions": shortQuestionsData.slice(7, 8),
+    "Sets and Functions": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Quadratic Equations": longQuestionsData.slice(0, 1),
+    "Theory of Quadratic Equations": longQuestionsData.slice(1, 2),
+    "Variations": longQuestionsData.slice(2, 3),
+    "Partial Fractions": longQuestionsData.slice(3, 4),
+    "Sets and Functions": longQuestionsData.slice(4, 5),
 };

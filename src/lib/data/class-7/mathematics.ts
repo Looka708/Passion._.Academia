@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './mathematics-short-questions';
+import { longQuestions as longQuestionsData } from './mathematics-long-questions';
+
 
 export const chapters = [
   "Rational Numbers and Decimal Numbers",
@@ -9404,4 +9407,15 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "$0 \\leq P(E) \\leq 1$"
   }
 ]
+};
+export const shortQuestions = {
+    "Integers": shortQuestionsData.slice(0, 4),
+    "Algebraic Expressions": shortQuestionsData.slice(4, 7),
+    "Linear Equations": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Integers": longQuestionsData.slice(0, 2),
+    "Algebraic Expressions": longQuestionsData.slice(2, 4),
+    "Linear Equations": longQuestionsData.slice(4, 5),
 };

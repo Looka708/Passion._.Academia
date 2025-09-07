@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './mathematics-short-questions';
+import { longQuestions as longQuestionsData } from './mathematics-long-questions';
 
 export const chapters = [
 "Real Numbers",
@@ -7194,4 +7196,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "33/36"
   }
   ]
+};
+export const shortQuestions = {
+    "Matrices and Determinants": shortQuestionsData.slice(0, 3),
+    "Logarithms": shortQuestionsData.slice(3, 6),
+    "Algebraic Expressions and Formulas": shortQuestionsData.slice(6, 8),
+    "Coordinate Geometry": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Matrices and Determinants": longQuestionsData.slice(0, 2),
+    "Logarithms": longQuestionsData.slice(2, 3),
+    "Algebraic Expressions and Formulas": longQuestionsData.slice(3, 4),
+    "Coordinate Geometry": longQuestionsData.slice(4, 5),
 };

@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
+
 
 export const chapters = ["Khatam-un-Nabiyeen Hazrat Muhammad",
                         "Responsibility of the Youth in Nation Building",
@@ -7745,4 +7748,15 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "b"
   }
 ]
+};
+export const shortQuestions = {
+    "Short Stories": shortQuestionsData.slice(0, 4),
+    "Poems": shortQuestionsData.slice(4, 7),
+    "Essays": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Short Stories": longQuestionsData.slice(0, 2),
+    "Poems": longQuestionsData.slice(2, 4),
+    "Essays": longQuestionsData.slice(4, 5),
 };

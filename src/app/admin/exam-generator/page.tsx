@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -10,22 +9,13 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
 import { MCQ } from "@/lib/types";
-import { courses, CourseName } from "@/lib/data/all-courses";
+import { courses, CourseName, Subject } from "@/lib/data/all-courses";
 
 type GeneratedExam = {
   mcqs: MCQ[];
   shortQuestions: string[];
   longQuestions: string[];
 };
-
-// Define a generic type for a subject to help TypeScript understand the structure
-type Subject = {
-    chapters: string[];
-    mcqs: Record<string, MCQ[]>;
-    shortQuestions: Record<string, string[]>;
-    longQuestions: Record<string, string[]>;
-};
-
 
 export default function ExamGeneratorPage() {
   const [selectedCourse, setSelectedCourse] = useState<CourseName | "">("");
@@ -60,25 +50,22 @@ export default function ExamGeneratorPage() {
   const getAvailableMcqs = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
     const courseData = courses[selectedCourse as CourseName];
-    // Cast to the specific Subject type to resolve the TypeScript error
-    const subjectData = courseData.subjects[selectedSubject] as Subject; 
-    return subjectData?.mcqs?.[selectedChapter] || [];
+    const subjectData = courseData.subjects[selectedSubject] as Subject;
+    return subjectData.mcqs?.[selectedChapter] || [];
   };
 
   const getAvailableShortQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
     const courseData = courses[selectedCourse as CourseName];
-    // Cast to the specific Subject type to resolve the TypeScript error
     const subjectData = courseData.subjects[selectedSubject] as Subject;
-    return subjectData?.shortQuestions?.[selectedChapter] || [];
+    return subjectData.shortQuestions?.[selectedChapter] || [];
   };
 
   const getAvailableLongQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
     const courseData = courses[selectedCourse as CourseName];
-    // Cast to the specific Subject type to resolve the TypeScript error
     const subjectData = courseData.subjects[selectedSubject] as Subject;
-    return subjectData?.longQuestions?.[selectedChapter] || [];
+    return subjectData.longQuestions?.[selectedChapter] || [];
   };
 
   const handleGenerateExam = () => {
@@ -119,6 +106,7 @@ export default function ExamGeneratorPage() {
     }
   };
 
+  const subjectChapters = selectedCourse && courses[selectedCourse as CourseName].subjects[selectedSubject] ? (courses[selectedCourse as CourseName].subjects[selectedSubject] as Subject).chapters : [];
 
   return (
     <ProtectedRoute adminOnly={true}>
@@ -170,7 +158,7 @@ export default function ExamGeneratorPage() {
                             <SelectValue placeholder="Select a Chapter" />
                         </SelectTrigger>
                         <SelectContent>
-                            {(courses[selectedCourse as CourseName].subjects[selectedSubject] as Subject)?.chapters.map(chapter => (
+                            {subjectChapters.map(chapter => (
                                 <SelectItem key={chapter} value={chapter}>{chapter}</SelectItem>
                             ))}
                         </SelectContent>
@@ -296,4 +284,3 @@ export default function ExamGeneratorPage() {
 // Add a list-alpha-lower style to your globals.css if you don't have one
 // for the options a, b, c, d...
 // e.g. .list-alpha-lower { list-style-type: lower-alpha; }
-

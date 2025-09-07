@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './general-science-short-questions';
+import { longQuestions as longQuestionsData } from './general-science-long-questions';
 
 export const chapters = [
   "Ecology",
@@ -590,3 +592,30 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What is the approximate speed of the Milky Way Galaxy's rotation?", "options": ["21,000 km per hour", "106,000 km per hour", "2,100,000 km per hour", "13.6 billion km per hour"], "correctAnswer": "2,100,000 km per hour" }
   ]
 }
+export const shortQuestions = {
+    "Ecology": shortQuestionsData.slice(0, 3),
+    "Human Nervous System": shortQuestionsData.slice(3, 6),
+    "Variation, Heredity and Cell Division": shortQuestionsData.slice(6, 9),
+    "Biotechnology": shortQuestionsData.slice(9, 12),
+    "Periodic Table": shortQuestionsData.slice(12, 15),
+    "Chemical Reactions": shortQuestionsData.slice(15, 18),
+    "Acids, Bases and Salts": shortQuestionsData.slice(18, 21),
+    "Force and Pressure": shortQuestionsData.slice(21, 24),
+    "Reflection and Refraction of Light": shortQuestionsData.slice(24, 27),
+    "Electricity and Magnetism": shortQuestionsData.slice(27, 30),
+    "Our Universe": shortQuestionsData.slice(30, 33),
+};
+
+export const longQuestions = {
+    "Ecology": longQuestionsData.slice(0, 1),
+    "Human Nervous System": longQuestionsData.slice(1, 2),
+    "Variation, Heredity and Cell Division": longQuestionsData.slice(2, 3),
+    "Biotechnology": longQuestionsData.slice(3, 4),
+    "Periodic Table": longQuestionsData.slice(4, 5),
+    "Chemical Reactions": longQuestionsData.slice(5, 6),
+    "Acids, Bases and Salts": longQuestionsData.slice(6, 7),
+    "Force and Pressure": longQuestionsData.slice(7, 8),
+    "Reflection and Refraction of Light": longQuestionsData.slice(8, 9),
+    "Electricity and Magnetism": longQuestionsData.slice(9, 10),
+    "Our Universe": longQuestionsData.slice(10, 11),
+};

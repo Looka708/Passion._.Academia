@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './chemistry-short-questions';
+import { longQuestions as longQuestionsData } from './chemistry-long-questions';
+
 
 export const chapters = [
   "Chemical Equilibrium",
@@ -65,4 +68,18 @@ export const mcqs: Record<string, MCQ[]> = {
       "correctAnswer": "CnH2n",
     },
   ]
+};
+
+export const shortQuestions = {
+    "Chemical Equilibrium": shortQuestionsData.slice(0, 3),
+    "Acids, Bases and Salts": shortQuestionsData.slice(3, 6),
+    "Organic Chemistry": shortQuestionsData.slice(6, 8),
+    "Hydrocarbons": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Chemical Equilibrium": longQuestionsData.slice(0, 1),
+    "Acids, Bases and Salts": longQuestionsData.slice(1, 2),
+    "Organic Chemistry": longQuestionsData.slice(2, 4),
+    "Hydrocarbons": longQuestionsData.slice(4, 5),
 };

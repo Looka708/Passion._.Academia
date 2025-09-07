@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
 
 export const chapters = [
 "The Impact of Globalisation on Culture and Economy (one-act play)",
@@ -6641,4 +6643,18 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "That greed and self-interest can overshadow genuine care and affection."
   }
   ]
+};
+
+export const shortQuestions = {
+    "Grammar: Parts of Speech": shortQuestionsData.slice(0, 3),
+    "Vocabulary: Synonyms and Antonyms": shortQuestionsData.slice(3, 6),
+    "Comprehension": shortQuestionsData.slice(6, 8),
+    "Sentence Structure": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Grammar: Parts of Speech": longQuestionsData.slice(0, 1),
+    "Vocabulary: Synonyms and Antonyms": longQuestionsData.slice(1, 2),
+    "Comprehension": longQuestionsData.slice(2, 4),
+    "Sentence Structure": longQuestionsData.slice(4, 5),
 };

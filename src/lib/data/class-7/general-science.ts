@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './general-science-short-questions';
+import { longQuestions as longQuestionsData } from './general-science-long-questions';
 
 export const chapters = [
   "Plant Systems",
@@ -642,3 +644,14 @@ export const mcqs: Record<string, MCQ[]> = {
 };
 
     
+export const shortQuestions = {
+    "Human Organ Systems": shortQuestionsData.slice(0, 3),
+    "Photosynthesis and Respiration in Plants": shortQuestionsData.slice(3, 6),
+    "Environment and Feeding Relationships": shortQuestionsData.slice(6, 10),
+};
+
+export const longQuestions = {
+    "Human Organ Systems": longQuestionsData.slice(0, 2),
+    "Photosynthesis and Respiration in Plants": longQuestionsData.slice(2, 4),
+    "Environment and Feeding Relationships": longQuestionsData.slice(4, 5),
+};

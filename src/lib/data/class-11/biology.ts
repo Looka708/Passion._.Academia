@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './biology-short-questions';
+import { longQuestions as longQuestionsData } from './biology-long-questions';
 
 export const chapters = ["Biodiversity and Classification", "Bacteria and Viruses", "Cells and Subcellular Organelles","Molecular Biology","Enzymes","Bioenergetics","Structural and Computational Biology","Plant Physiology","Human Digestive System","Human Respiratory System","Human Circulatory System","Human Skeletal and Muscular Systems"];
 export const mcqs: Record<string, MCQ[]> = {
@@ -6583,4 +6585,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "c"
   }
 ]
+};
+export const shortQuestions = {
+    "The Cell": shortQuestionsData.slice(0, 3),
+    "Biological Molecules": shortQuestionsData.slice(3, 5),
+    "Enzymes": shortQuestionsData.slice(5, 7),
+    "Bioenergetics": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "The Cell": longQuestionsData.slice(0, 1),
+    "Biological Molecules": longQuestionsData.slice(1, 2),
+    "Enzymes": longQuestionsData.slice(2, 3),
+    "Bioenergetics": longQuestionsData.slice(3, 5),
 };

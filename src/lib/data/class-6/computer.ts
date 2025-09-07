@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
 
 export const chapters = [
   "ICT Fundamentals",
@@ -928,3 +930,20 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What is the importance of 'Quality Assurance'?", "options": ["It only focuses on customer service.", "It ensures that products and services meet certain quality standards.", "It is solely about marketing.", "It manages employee performance."], "correctAnswer": "It ensures that products and services meet certain quality standards." }
 ]
   }
+  export const shortQuestions = {
+    "ICT Fundamentals": shortQuestionsData.slice(0, 2),
+    "Components of Computer System": shortQuestionsData.slice(2, 4),
+    "Digital Skills": shortQuestionsData.slice(4, 6),
+    "Computational Thinking": shortQuestionsData.slice(6, 8),
+    "Programming": shortQuestionsData.slice(8, 10),
+    "Digital Citizenship": shortQuestionsData.slice(10, 12),
+};
+
+export const longQuestions = {
+    "ICT Fundamentals": longQuestionsData.slice(0, 1),
+    "Components of Computer System": longQuestionsData.slice(1, 2),
+    "Digital Skills": longQuestionsData.slice(2, 3),
+    "Computational Thinking": longQuestionsData.slice(3, 4),
+    "Programming": longQuestionsData.slice(4, 5),
+    "Digital Citizenship": longQuestionsData.slice(5, 6),
+};

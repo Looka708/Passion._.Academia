@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './biology-short-questions';
+import { longQuestions as longQuestionsData } from './biology-long-questions';
+
 
 export const chapters = [
   "Gaseous Exchange",
@@ -50,4 +53,19 @@ export const mcqs: Record<string, MCQ[]> = {
       "correctAnswer": "Budding",
     },
   ]
+};
+export const shortQuestions = {
+    "Gaseous Exchange": shortQuestionsData.slice(0, 2),
+    "Homeostasis": shortQuestionsData.slice(2, 4),
+    "Coordination and Control": shortQuestionsData.slice(4, 6),
+    "Support and Movement": shortQuestionsData.slice(6, 8),
+    "Reproduction": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Gaseous Exchange": longQuestionsData.slice(0, 1),
+    "Homeostasis": longQuestionsData.slice(1, 2),
+    "Coordination and Control": longQuestionsData.slice(2, 3),
+    "Support and Movement": longQuestionsData.slice(3, 4),
+    "Reproduction": longQuestionsData.slice(4, 5),
 };

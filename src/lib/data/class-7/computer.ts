@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
 
 export const chapters = [
   "Emerging Technologies",
@@ -377,3 +379,14 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What is the main objective of creating a prototype within the context of entrepreneurship?", "options": ["To create the final product", "To pick one sustainable development goal and create a prototype within their context", "To replace the business plan", "To manage customer relations"], "correctAnswer": "To pick one sustainable development goal and create a prototype within their context" }
 ],
 }
+export const shortQuestions = {
+    "Computer Hardware": shortQuestionsData.slice(0, 4),
+    "Software Basics": shortQuestionsData.slice(4, 7),
+    "Introduction to Internet": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Computer Hardware": longQuestionsData.slice(0, 2),
+    "Software Basics": longQuestionsData.slice(2, 4),
+    "Introduction to Internet": longQuestionsData.slice(4, 5),
+};

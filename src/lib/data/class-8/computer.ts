@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
 
 export const chapters = [
   "Emerging Technologies",
@@ -430,3 +432,24 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "A business plan is a document setting out an objective of the business.", "options": ["True", "False"], "correctAnswer": "True" }
 ]
 }
+export const shortQuestions = {
+    "Emerging Technologies": shortQuestionsData.slice(0, 2),
+    "Data Communication and Computer Networks": shortQuestionsData.slice(2, 4),
+    "Microsoft Excel": shortQuestionsData.slice(4, 6),
+    "Google Sheets": shortQuestionsData.slice(6, 8),
+    "Computational Thinking": shortQuestionsData.slice(8, 10),
+    "Programming": shortQuestionsData.slice(10, 12),
+    "Digital Citizenship": shortQuestionsData.slice(12, 14),
+    "Entrepreneurship in Digital Age": shortQuestionsData.slice(14, 16),
+};
+
+export const longQuestions = {
+    "Emerging Technologies": longQuestionsData.slice(0, 1),
+    "Data Communication and Computer Networks": longQuestionsData.slice(1, 2),
+    "Microsoft Excel": longQuestionsData.slice(2, 3),
+    "Google Sheets": longQuestionsData.slice(3, 4),
+    "Computational Thinking": longQuestionsData.slice(4, 5),
+    "Programming": longQuestionsData.slice(5, 6),
+    "Digital Citizenship": longQuestionsData.slice(6, 7),
+    "Entrepreneurship in Digital Age": longQuestionsData.slice(7, 8),
+};

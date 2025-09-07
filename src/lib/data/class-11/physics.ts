@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './physics-short-questions';
+import { longQuestions as longQuestionsData } from './physics-long-questions';
+
 
 export const chapters = ["Measurements",
                         "Force and Motion",
@@ -6629,4 +6632,15 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "c"
   }
 ],
+};
+export const shortQuestions = {
+    "Vectors and Equilibrium": shortQuestionsData.slice(0, 4),
+    "Work and Energy": shortQuestionsData.slice(4, 7),
+    "Rotational and Circular Motion": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Vectors and Equilibrium": longQuestionsData.slice(0, 2),
+    "Work and Energy": longQuestionsData.slice(2, 4),
+    "Rotational and Circular Motion": longQuestionsData.slice(4, 5),
 };

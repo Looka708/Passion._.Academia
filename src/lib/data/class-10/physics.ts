@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './physics-short-questions';
+import { longQuestions as longQuestionsData } from './physics-long-questions';
+
 
 export const chapters = [
   "Simple Harmonic Motion and Waves",
@@ -80,4 +83,20 @@ export const mcqs: Record<string, MCQ[]> = {
       "correctAnswer": "sum",
     },
   ]
+};
+
+export const shortQuestions = {
+    "Simple Harmonic Motion and Waves": shortQuestionsData.slice(0, 2),
+    "Sound": shortQuestionsData.slice(2, 4),
+    "Geometrical Optics": shortQuestionsData.slice(4, 6),
+    "Electostatics": shortQuestionsData.slice(6, 8),
+    "Current Electricity": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Simple Harmonic Motion and Waves": longQuestionsData.slice(0, 1),
+    "Sound": longQuestionsData.slice(1, 2),
+    "Geometrical Optics": longQuestionsData.slice(2, 3),
+    "Electostatics": longQuestionsData.slice(3, 4),
+    "Current Electricity": longQuestionsData.slice(4, 5),
 };

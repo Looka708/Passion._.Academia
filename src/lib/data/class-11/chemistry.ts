@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './chemistry-short-questions';
+import { longQuestions as longQuestionsData } from './chemistry-long-questions';
 
 export const chapters = ["Periodic Table and Periodic Properties", 
                         "Atomic Structure", 
@@ -8851,4 +8853,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "b"
   }
 ]
+};
+export const shortQuestions = {
+    "Stoichiometry": shortQuestionsData.slice(0, 3),
+    "Atomic Structure": shortQuestionsData.slice(3, 5),
+    "Theories of Covalent Bonding": shortQuestionsData.slice(5, 7),
+    "States of Matter": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Stoichiometry": longQuestionsData.slice(0, 1),
+    "Atomic Structure": longQuestionsData.slice(1, 2),
+    "Theories of Covalent Bonding": longQuestionsData.slice(2, 3),
+    "States of Matter": longQuestionsData.slice(3, 5),
 };

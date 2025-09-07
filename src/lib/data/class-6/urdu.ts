@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './urdu-short-questions';
+import { longQuestions as longQuestionsData } from './urdu-long-questions';
 
 export const chapters: string[] = [
   "Urdu Grammar"
@@ -259,3 +261,14 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 250, "questionText": "اردو گرامر میں \"مذکر\" اور \"مونث\" کا تعین کیسے کیا جاتا ہے؟", "options": ["صرف الفاظ سے", "بول چال کے مطابق", "لغت کے مطابق", "کتابوں سے"], "correctAnswer": "بول چال کے مطابق", "language": "urdu" }
   ],
 }
+export const shortQuestions = {
+    "Hamd": shortQuestionsData.slice(0, 3),
+    "Naat": shortQuestionsData.slice(3, 6),
+    "Qawaid": shortQuestionsData.slice(6, 10),
+};
+
+export const longQuestions = {
+    "Hamd": longQuestionsData.slice(0, 2),
+    "Naat": longQuestionsData.slice(2, 4),
+    "Qawaid": longQuestionsData.slice(4, 5),
+};

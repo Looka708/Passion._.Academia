@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
 
 export const chapters = [
   "Seert-un-Nabi (Universally desired personality traits)",
@@ -639,3 +641,15 @@ export const mcqs: Record<string, MCQ[]> = {
   ],
 }
 
+
+export const shortQuestions = {
+    "Nouns and Verbs": shortQuestionsData.slice(0, 4),
+    "Adjectives and Adverbs": shortQuestionsData.slice(4, 7),
+    "Sentence Structure": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Nouns and Verbs": longQuestionsData.slice(0, 2),
+    "Adjectives and Adverbs": longQuestionsData.slice(2, 4),
+    "Sentence Structure": longQuestionsData.slice(4, 5),
+};

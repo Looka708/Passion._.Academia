@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './chemistry-short-questions';
+import { longQuestions as longQuestionsData } from './chemistry-long-questions';
 
 export const chapters = [
   "States of Matter and Phase Changes",
@@ -5444,4 +5446,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "To wash off chemicals from the body in case of a large spill."
   }
 ]
+};
+export const shortQuestions = {
+    "Fundamentals of Chemistry": shortQuestionsData.slice(0, 3),
+    "Atomic Structure": shortQuestionsData.slice(3, 6),
+    "Periodic Table and Periodicity": shortQuestionsData.slice(6, 8),
+    "Chemical Bonding": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Fundamentals of Chemistry": longQuestionsData.slice(0, 1),
+    "Atomic Structure": longQuestionsData.slice(1, 2),
+    "Periodic Table and Periodicity": longQuestionsData.slice(2, 3),
+    "Chemical Bonding": longQuestionsData.slice(3, 5),
 };

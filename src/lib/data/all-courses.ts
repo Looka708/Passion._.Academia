@@ -4,6 +4,8 @@
  * that can be easily used by components like the Exam Generator.
  */
 
+import type { MCQ } from '@/lib/types';
+
 // AFNS Imports
 import { chapters as afnsBiologyChapters, mcqs as afnsBiologyMCQs } from '@/lib/data/afns/biology';
 import { chapters as afnsChemistryChapters, mcqs as afnsChemistryMCQs } from '@/lib/data/afns/chemistry';
@@ -31,144 +33,72 @@ import { chapters as mcmMathChapters, mcqs as mcmMathMCQs } from '@/lib/data/mcm
 import { chapters as mcmGeneralScienceChapters, mcqs as mcmGeneralScienceMCQs } from '@/lib/data/mcm/general-science';
 
 // Class 6 Imports
-import { chapters as class6ComputerChapters, mcqs as class6ComputerMCQs } from '@/lib/data/class-6/computer';
-import { shortQuestions as class6ComputerShortQuestions } from '@/lib/data/class-6/computer-short-questions';
-import { longQuestions as class6ComputerLongQuestions } from '@/lib/data/class-6/computer-long-questions';
-import { chapters as class6EnglishChapters, mcqs as class6EnglishMCQs } from '@/lib/data/class-6/english';
-import { shortQuestions as class6EnglishShortQuestions } from '@/lib/data/class-6/english-short-questions';
-import { longQuestions as class6EnglishLongQuestions } from '@/lib/data/class-6/english-long-questions';
-import { chapters as class6GeneralScienceChapters, mcqs as class6GeneralScienceMCQs } from '@/lib/data/class-6/general-science';
-import { shortQuestions as class6GeneralScienceShortQuestions } from '@/lib/data/class-6/general-science-short-questions';
-import { longQuestions as class6GeneralScienceLongQuestions } from '@/lib/data/class-6/general-science-long-questions';
-import { chapters as class6MathChapters, mcqs as class6MathMCQs } from '@/lib/data/class-6/mathematics';
-import { shortQuestions as class6MathShortQuestions } from '@/lib/data/class-6/mathematics-short-questions';
-import { longQuestions as class6MathLongQuestions } from '@/lib/data/class-6/mathematics-long-questions';
-import { chapters as class6UrduChapters, mcqs as class6UrduMCQs } from '@/lib/data/class-6/urdu';
-import { shortQuestions as class6UrduShortQuestions } from '@/lib/data/class-6/urdu-short-questions';
-import { longQuestions as class6UrduLongQuestions } from '@/lib/data/class-6/urdu-long-questions';
+import { chapters as class6ComputerChapters, mcqs as class6ComputerMCQs, shortQuestions as class6ComputerShortQuestions, longQuestions as class6ComputerLongQuestions } from '@/lib/data/class-6/computer';
+import { chapters as class6EnglishChapters, mcqs as class6EnglishMCQs, shortQuestions as class6EnglishShortQuestions, longQuestions as class6EnglishLongQuestions } from '@/lib/data/class-6/english';
+import { chapters as class6GeneralScienceChapters, mcqs as class6GeneralScienceMCQs, shortQuestions as class6GeneralScienceShortQuestions, longQuestions as class6GeneralScienceLongQuestions } from '@/lib/data/class-6/general-science';
+import { chapters as class6MathChapters, mcqs as class6MathMCQs, shortQuestions as class6MathShortQuestions, longQuestions as class6MathLongQuestions } from '@/lib/data/class-6/mathematics';
+import { chapters as class6UrduChapters, mcqs as class6UrduMCQs, shortQuestions as class6UrduShortQuestions, longQuestions as class6UrduLongQuestions } from '@/lib/data/class-6/urdu';
 
 // Class 7 Imports
-import { chapters as class7ComputerChapters, mcqs as class7ComputerMCQs } from '@/lib/data/class-7/computer';
-import { shortQuestions as class7ComputerShortQuestions } from '@/lib/data/class-7/computer-short-questions';
-import { longQuestions as class7ComputerLongQuestions } from '@/lib/data/class-7/computer-long-questions';
-import { chapters as class7EnglishChapters, mcqs as class7EnglishMCQs } from '@/lib/data/class-7/english';
-import { shortQuestions as class7EnglishShortQuestions } from '@/lib/data/class-7/english-short-questions';
-import { longQuestions as class7EnglishLongQuestions } from '@/lib/data/class-7/english-long-questions';
-import { chapters as class7GeneralScienceChapters, mcqs as class7GeneralScienceMCQs } from '@/lib/data/class-7/general-science';
-import { shortQuestions as class7GeneralScienceShortQuestions } from '@/lib/data/class-7/general-science-short-questions';
-import { longQuestions as class7GeneralScienceLongQuestions } from '@/lib/data/class-7/general-science-long-questions';
-import { chapters as class7MathChapters, mcqs as class7MathMCQs } from '@/lib/data/class-7/mathematics';
-import { shortQuestions as class7MathShortQuestions } from '@/lib/data/class-7/mathematics-short-questions';
-import { longQuestions as class7MathLongQuestions } from '@/lib/data/class-7/mathematics-long-questions';
-import { chapters as class7UrduChapters, mcqs as class7UrduMCQs } from '@/lib/data/class-7/urdu';
-import { shortQuestions as class7UrduShortQuestions } from '@/lib/data/class-7/urdu-short-questions';
-import { longQuestions as class7UrduLongQuestions } from '@/lib/data/class-7/urdu-long-questions';
-
+import { chapters as class7ComputerChapters, mcqs as class7ComputerMCQs, shortQuestions as class7ComputerShortQuestions, longQuestions as class7ComputerLongQuestions } from '@/lib/data/class-7/computer';
+import { chapters as class7EnglishChapters, mcqs as class7EnglishMCQs, shortQuestions as class7EnglishShortQuestions, longQuestions as class7EnglishLongQuestions } from '@/lib/data/class-7/english';
+import { chapters as class7GeneralScienceChapters, mcqs as class7GeneralScienceMCQs, shortQuestions as class7GeneralScienceShortQuestions, longQuestions as class7GeneralScienceLongQuestions } from '@/lib/data/class-7/general-science';
+import { chapters as class7MathChapters, mcqs as class7MathMCQs, shortQuestions as class7MathShortQuestions, longQuestions as class7MathLongQuestions } from '@/lib/data/class-7/mathematics';
+import { chapters as class7UrduChapters, mcqs as class7UrduMCQs, shortQuestions as class7UrduShortQuestions, longQuestions as class7UrduLongQuestions } from '@/lib/data/class-7/urdu';
 
 // Class 8 Imports
-import { chapters as class8ComputerChapters, mcqs as class8ComputerMCQs } from '@/lib/data/class-8/computer';
-import { shortQuestions as class8ComputerShortQuestions } from '@/lib/data/class-8/computer-short-questions';
-import { longQuestions as class8ComputerLongQuestions } from '@/lib/data/class-8/computer-long-questions';
-import { chapters as class8EnglishChapters, mcqs as class8EnglishMCQs } from '@/lib/data/class-8/english';
-import { shortQuestions as class8EnglishShortQuestions } from '@/lib/data/class-8/english-short-questions';
-import { longQuestions as class8EnglishLongQuestions } from '@/lib/data/class-8/english-long-questions';
-import { chapters as class8GeneralScienceChapters, mcqs as class8GeneralScienceMCQs } from '@/lib/data/class-8/general-science';
-import { shortQuestions as class8GeneralScienceShortQuestions } from '@/lib/data/class-8/general-science-short-questions';
-import { longQuestions as class8GeneralScienceLongQuestions } from '@/lib/data/class-8/general-science-long-questions';
-import { chapters as class8MathChapters, mcqs as class8MathMCQs } from '@/lib/data/class-8/mathematics';
-import { shortQuestions as class8MathShortQuestions } from '@/lib/data/class-8/mathematics-short-questions';
-import { longQuestions as class8MathLongQuestions } from '@/lib/data/class-8/mathematics-long-questions';
-import { chapters as class8UrduChapters, mcqs as class8UrduMCQs } from '@/lib/data/class-8/urdu';
-import { shortQuestions as class8UrduShortQuestions } from '@/lib/data/class-8/urdu-short-questions';
-import { longQuestions as class8UrduLongQuestions } from '@/lib/data/class-8/urdu-long-questions';
-
+import { chapters as class8ComputerChapters, mcqs as class8ComputerMCQs, shortQuestions as class8ComputerShortQuestions, longQuestions as class8ComputerLongQuestions } from '@/lib/data/class-8/computer';
+import { chapters as class8EnglishChapters, mcqs as class8EnglishMCQs, shortQuestions as class8EnglishShortQuestions, longQuestions as class8EnglishLongQuestions } from '@/lib/data/class-8/english';
+import { chapters as class8GeneralScienceChapters, mcqs as class8GeneralScienceMCQs, shortQuestions as class8GeneralScienceShortQuestions, longQuestions as class8GeneralScienceLongQuestions } from '@/lib/data/class-8/general-science';
+import { chapters as class8MathChapters, mcqs as class8MathMCQs, shortQuestions as class8MathShortQuestions, longQuestions as class8MathLongQuestions } from '@/lib/data/class-8/mathematics';
+import { chapters as class8UrduChapters, mcqs as class8UrduMCQs, shortQuestions as class8UrduShortQuestions, longQuestions as class8UrduLongQuestions } from '@/lib/data/class-8/urdu';
 
 // Class 9 Imports
-import { chapters as class9BiologyChapters, mcqs as class9BiologyMCQs } from '@/lib/data/class-9/biology';
-import { shortQuestions as class9BiologyShortQuestions } from '@/lib/data/class-9/biology-short-questions';
-import { longQuestions as class9BiologyLongQuestions } from '@/lib/data/class-9/biology-long-questions';
-import { chapters as class9ChemistryChapters, mcqs as class9ChemistryMCQs } from '@/lib/data/class-9/chemistry';
-import { shortQuestions as class9ChemistryShortQuestions } from '@/lib/data/class-9/chemistry-short-questions';
-import { longQuestions as class9ChemistryLongQuestions } from '@/lib/data/class-9/chemistry-long-questions';
-import { chapters as class9ComputerChapters, mcqs as class9ComputerMCQs } from '@/lib/data/class-9/computer';
-import { shortQuestions as class9ComputerShortQuestions } from '@/lib/data/class-9/computer-short-questions';
-import { longQuestions as class9ComputerLongQuestions } from '@/lib/data/class-9/computer-long-questions';
-import { chapters as class9EnglishChapters, mcqs as class9EnglishMCQs } from '@/lib/data/class-9/english';
-import { shortQuestions as class9EnglishShortQuestions } from '@/lib/data/class-9/english-short-questions';
-import { longQuestions as class9EnglishLongQuestions } from '@/lib/data/class-9/english-long-questions';
-import { chapters as class9MathChapters, mcqs as class9MathMCQs } from '@/lib/data/class-9/mathematics';
-import { shortQuestions as class9MathShortQuestions } from '@/lib/data/class-9/mathematics-short-questions';
-import { longQuestions as class9MathLongQuestions } from '@/lib/data/class-9/mathematics-long-questions';
-import { chapters as class9PhysicsChapters, mcqs as class9PhysicsMCQs } from '@/lib/data/class-9/physics';
-import { shortQuestions as class9PhysicsShortQuestions } from '@/lib/data/class-9/physics-short-questions';
-import { longQuestions as class9PhysicsLongQuestions } from '@/lib/data/class-9/physics-long-questions';
-import { chapters as class9UrduChapters, mcqs as class9UrduMCQs } from '@/lib/data/class-9/urdu';
-import { shortQuestions as class9UrduShortQuestions } from '@/lib/data/class-9/urdu-short-questions';
-import { longQuestions as class9UrduLongQuestions } from '@/lib/data/class-9/urdu-long-questions';
-
+import { chapters as class9BiologyChapters, mcqs as class9BiologyMCQs, shortQuestions as class9BiologyShortQuestions, longQuestions as class9BiologyLongQuestions } from '@/lib/data/class-9/biology';
+import { chapters as class9ChemistryChapters, mcqs as class9ChemistryMCQs, shortQuestions as class9ChemistryShortQuestions, longQuestions as class9ChemistryLongQuestions } from '@/lib/data/class-9/chemistry';
+import { chapters as class9ComputerChapters, mcqs as class9ComputerMCQs, shortQuestions as class9ComputerShortQuestions, longQuestions as class9ComputerLongQuestions } from '@/lib/data/class-9/computer';
+import { chapters as class9EnglishChapters, mcqs as class9EnglishMCQs, shortQuestions as class9EnglishShortQuestions, longQuestions as class9EnglishLongQuestions } from '@/lib/data/class-9/english';
+import { chapters as class9MathChapters, mcqs as class9MathMCQs, shortQuestions as class9MathShortQuestions, longQuestions as class9MathLongQuestions } from '@/lib/data/class-9/mathematics';
+import { chapters as class9PhysicsChapters, mcqs as class9PhysicsMCQs, shortQuestions as class9PhysicsShortQuestions, longQuestions as class9PhysicsLongQuestions } from '@/lib/data/class-9/physics';
+import { chapters as class9UrduChapters, mcqs as class9UrduMCQs, shortQuestions as class9UrduShortQuestions, longQuestions as class9UrduLongQuestions } from '@/lib/data/class-9/urdu';
 
 // Class 10 Imports
-import { chapters as class10BiologyChapters, mcqs as class10BiologyMCQs } from '@/lib/data/class-10/biology';
-import { shortQuestions as class10BiologyShortQuestions } from '@/lib/data/class-10/biology-short-questions';
-import { longQuestions as class10BiologyLongQuestions } from '@/lib/data/class-10/biology-long-questions';
-import { chapters as class10ChemistryChapters, mcqs as class10ChemistryMCQs } from '@/lib/data/class-10/chemistry';
-import { shortQuestions as class10ChemistryShortQuestions } from '@/lib/data/class-10/chemistry-short-questions';
-import { longQuestions as class10ChemistryLongQuestions } from '@/lib/data/class-10/chemistry-long-questions';
-import { chapters as class10ComputerChapters, mcqs as class10ComputerMCQs } from '@/lib/data/class-10/computer';
-import { shortQuestions as class10ComputerShortQuestions } from '@/lib/data/class-10/computer-short-questions';
-import { longQuestions as class10ComputerLongQuestions } from '@/lib/data/class-10/computer-long-questions';
-import { chapters as class10EnglishChapters, mcqs as class10EnglishMCQs } from '@/lib/data/class-10/english';
-import { shortQuestions as class10EnglishShortQuestions } from '@/lib/data/class-10/english-short-questions';
-import { longQuestions as class10EnglishLongQuestions } from '@/lib/data/class-10/english-long-questions';
-import { chapters as class10MathChapters, mcqs as class10MathMCQs } from '@/lib/data/class-10/mathematics';
-import { shortQuestions as class10MathShortQuestions } from '@/lib/data/class-10/mathematics-short-questions';
-import { longQuestions as class10MathLongQuestions } from '@/lib/data/class-10/mathematics-long-questions';
-import { chapters as class10PhysicsChapters, mcqs as class10PhysicsMCQs } from '@/lib/data/class-10/physics';
-import { shortQuestions as class10PhysicsShortQuestions } from '@/lib/data/class-10/physics-short-questions';
-import { longQuestions as class10PhysicsLongQuestions } from '@/lib/data/class-10/physics-long-questions';
-import { chapters as class10UrduChapters, mcqs as class10UrduMCQs } from '@/lib/data/class-10/urdu';
-import { shortQuestions as class10UrduShortQuestions } from '@/lib/data/class-10/urdu-short-questions';
-import { longQuestions as class10UrduLongQuestions } from '@/lib/data/class-10/urdu-long-questions';
+import { chapters as class10BiologyChapters, mcqs as class10BiologyMCQs, shortQuestions as class10BiologyShortQuestions, longQuestions as class10BiologyLongQuestions } from '@/lib/data/class-10/biology';
+import { chapters as class10ChemistryChapters, mcqs as class10ChemistryMCQs, shortQuestions as class10ChemistryShortQuestions, longQuestions as class10ChemistryLongQuestions } from '@/lib/data/class-10/chemistry';
+import { chapters as class10ComputerChapters, mcqs as class10ComputerMCQs, shortQuestions as class10ComputerShortQuestions, longQuestions as class10ComputerLongQuestions } from '@/lib/data/class-10/computer';
+import { chapters as class10EnglishChapters, mcqs as class10EnglishMCQs, shortQuestions as class10EnglishShortQuestions, longQuestions as class10EnglishLongQuestions } from '@/lib/data/class-10/english';
+import { chapters as class10MathChapters, mcqs as class10MathMCQs, shortQuestions as class10MathShortQuestions, longQuestions as class10MathLongQuestions } from '@/lib/data/class-10/mathematics';
+import { chapters as class10PhysicsChapters, mcqs as class10PhysicsMCQs, shortQuestions as class10PhysicsShortQuestions, longQuestions as class10PhysicsLongQuestions } from '@/lib/data/class-10/physics';
+import { chapters as class10UrduChapters, mcqs as class10UrduMCQs, shortQuestions as class10UrduShortQuestions, longQuestions as class10UrduLongQuestions } from '@/lib/data/class-10/urdu';
 
 // Class 11 Imports
-import { chapters as class11BiologyChapters, mcqs as class11BiologyMCQs } from '@/lib/data/class-11/biology';
-import { shortQuestions as class11BiologyShortQuestions } from '@/lib/data/class-11/biology-short-questions';
-import { longQuestions as class11BiologyLongQuestions } from '@/lib/data/class-11/biology-long-questions';
-import { chapters as class11ChemistryChapters, mcqs as class11ChemistryMCQs } from '@/lib/data/class-11/chemistry';
-import { shortQuestions as class11ChemistryShortQuestions } from '@/lib/data/class-11/chemistry-short-questions';
-import { longQuestions as class11ChemistryLongQuestions } from '@/lib/data/class-11/chemistry-long-questions';
-import { chapters as class11ComputerChapters, mcqs as class11ComputerMCQs } from '@/lib/data/class-11/computer';
-import { shortQuestions as class11ComputerShortQuestions } from '@/lib/data/class-11/computer-short-questions';
-import { longQuestions as class11ComputerLongQuestions } from '@/lib/data/class-11/computer-long-questions';
-import { chapters as class11EnglishChapters, mcqs as class11EnglishMCQs } from '@/lib/data/class-11/english';
-import { shortQuestions as class11EnglishShortQuestions } from '@/lib/data/class-11/english-short-questions';
-import { longQuestions as class11EnglishLongQuestions } from '@/lib/data/class-11/english-long-questions';
-import { chapters as class11MathChapters, mcqs as class11MathMCQs } from '@/lib/data/class-11/mathematics';
-import { shortQuestions as class11MathShortQuestions } from '@/lib/data/class-11/mathematics-short-questions';
-import { longQuestions as class11MathLongQuestions } from '@/lib/data/class-11/mathematics-long-questions';
-import { chapters as class11PhysicsChapters, mcqs as class11PhysicsMCQs } from '@/lib/data/class-11/physics';
-import { shortQuestions as class11PhysicsShortQuestions } from '@/lib/data/class-11/physics-short-questions';
-import { longQuestions as class11PhysicsLongQuestions } from '@/lib/data/class-11/physics-long-questions';
+import { chapters as class11BiologyChapters, mcqs as class11BiologyMCQs, shortQuestions as class11BiologyShortQuestions, longQuestions as class11BiologyLongQuestions } from '@/lib/data/class-11/biology';
+import { chapters as class11ChemistryChapters, mcqs as class11ChemistryMCQs, shortQuestions as class11ChemistryShortQuestions, longQuestions as class11ChemistryLongQuestions } from '@/lib/data/class-11/chemistry';
+import { chapters as class11ComputerChapters, mcqs as class11ComputerMCQs, shortQuestions as class11ComputerShortQuestions, longQuestions as class11ComputerLongQuestions } from '@/lib/data/class-11/computer';
+import { chapters as class11EnglishChapters, mcqs as class11EnglishMCQs, shortQuestions as class11EnglishShortQuestions, longQuestions as class11EnglishLongQuestions } from '@/lib/data/class-11/english';
+import { chapters as class11MathChapters, mcqs as class11MathMCQs, shortQuestions as class11MathShortQuestions, longQuestions as class11MathLongQuestions } from '@/lib/data/class-11/mathematics';
+import { chapters as class11PhysicsChapters, mcqs as class11PhysicsMCQs, shortQuestions as class11PhysicsShortQuestions, longQuestions as class11PhysicsLongQuestions } from '@/lib/data/class-11/physics';
 
 // Class 12 Imports
-import { chapters as class12BiologyChapters, mcqs as class12BiologyMCQs } from '@/lib/data/class-12/biology';
-import { shortQuestions as class12BiologyShortQuestions } from '@/lib/data/class-12/biology-short-questions';
-import { longQuestions as class12BiologyLongQuestions } from '@/lib/data/class-12/biology-long-questions';
-import { chapters as class12ChemistryChapters, mcqs as class12ChemistryMCQs } from '@/lib/data/class-12/chemistry';
-import { shortQuestions as class12ChemistryShortQuestions } from '@/lib/data/class-12/chemistry-short-questions';
-import { longQuestions as class12ChemistryLongQuestions } from '@/lib/data/class-12/chemistry-long-questions';
-import { chapters as class12ComputerChapters, mcqs as class12ComputerMCQs } from '@/lib/data/class-12/computer';
-import { shortQuestions as class12ComputerShortQuestions } from '@/lib/data/class-12/computer-short-questions';
-import { longQuestions as class12ComputerLongQuestions } from '@/lib/data/class-12/computer-long-questions';
-import { chapters as class12MathChapters, mcqs as class12MathMCQs } from '@/lib/data/class-12/mathematics';
-import { shortQuestions as class12MathShortQuestions } from '@/lib/data/class-12/mathematics-short-questions';
-import { longQuestions as class12MathLongQuestions } from '@/lib/data/class-12/mathematics-long-questions';
-import { chapters as class12PhysicsChapters, mcqs as class12PhysicsMCQs } from '@/lib/data/class-12/physics';
-import { shortQuestions as class12PhysicsShortQuestions } from '@/lib/data/class-12/physics-short-questions';
-import { longQuestions as class12PhysicsLongQuestions } from '@/lib/data/class-12/physics-long-questions';
+import { chapters as class12BiologyChapters, mcqs as class12BiologyMCQs, shortQuestions as class12BiologyShortQuestions, longQuestions as class12BiologyLongQuestions } from '@/lib/data/class-12/biology';
+import { chapters as class12ChemistryChapters, mcqs as class12ChemistryMCQs, shortQuestions as class12ChemistryShortQuestions, longQuestions as class12ChemistryLongQuestions } from '@/lib/data/class-12/chemistry';
+import { chapters as class12ComputerChapters, mcqs as class12ComputerMCQs, shortQuestions as class12ComputerShortQuestions, longQuestions as class12ComputerLongQuestions } from '@/lib/data/class-12/computer';
+import { chapters as class12MathChapters, mcqs as class12MathMCQs, shortQuestions as class12MathShortQuestions, longQuestions as class12MathLongQuestions } from '@/lib/data/class-12/mathematics';
+import { chapters as class12PhysicsChapters, mcqs as class12PhysicsMCQs, shortQuestions as class12PhysicsShortQuestions, longQuestions as class12PhysicsLongQuestions } from '@/lib/data/class-12/physics';
 
 
-export const courses = {
+export type Subject = {
+  chapters: string[];
+  mcqs: Record<string, MCQ[]>;
+  shortQuestions: Record<string, string[]>;
+  longQuestions: Record<string, string[]>;
+};
+
+export type Course = {
+  subjects: Record<string, Subject>;
+};
+
+export const courses: Record<string, Course> = {
   "AFNS": {
     subjects: {
       "Biology": { chapters: afnsBiologyChapters, mcqs: afnsBiologyMCQs, shortQuestions: {}, longQuestions: {} },
@@ -209,7 +139,7 @@ export const courses = {
       "English": { chapters: class6EnglishChapters, mcqs: class6EnglishMCQs, shortQuestions: class6EnglishShortQuestions, longQuestions: class6EnglishLongQuestions },
       "General Science": { chapters: class6GeneralScienceChapters, mcqs: class6GeneralScienceMCQs, shortQuestions: class6GeneralScienceShortQuestions, longQuestions: class6GeneralScienceLongQuestions },
       "Mathematics": { chapters: class6MathChapters, mcqs: class6MathMCQs, shortQuestions: class6MathShortQuestions, longQuestions: class6MathLongQuestions },
-      "Urdu Grammar": { chapters: class6UrduChapters, mcqs: class6UrduMCQs, shortQuestions: class6UrduShortQuestions, longQuestions: class6UrduLongQuestions },
+      "Urdu": { chapters: class6UrduChapters, mcqs: class6UrduMCQs, shortQuestions: class6UrduShortQuestions, longQuestions: class6UrduLongQuestions },
     }
   },
   "Class 7": {
@@ -218,7 +148,7 @@ export const courses = {
         "English": { chapters: class7EnglishChapters, mcqs: class7EnglishMCQs, shortQuestions: class7EnglishShortQuestions, longQuestions: class7EnglishLongQuestions },
         "General Science": { chapters: class7GeneralScienceChapters, mcqs: class7GeneralScienceMCQs, shortQuestions: class7GeneralScienceShortQuestions, longQuestions: class7GeneralScienceLongQuestions },
         "Mathematics": { chapters: class7MathChapters, mcqs: class7MathMCQs, shortQuestions: class7MathShortQuestions, longQuestions: class7MathLongQuestions },
-        "Urdu Grammar": { chapters: class7UrduChapters, mcqs: class7UrduMCQs, shortQuestions: class7UrduShortQuestions, longQuestions: class7UrduLongQuestions },
+        "Urdu": { chapters: class7UrduChapters, mcqs: class7UrduMCQs, shortQuestions: class7UrduShortQuestions, longQuestions: class7UrduLongQuestions },
     }
   },
    "Class 8": {
@@ -227,7 +157,7 @@ export const courses = {
       "English": { chapters: class8EnglishChapters, mcqs: class8EnglishMCQs, shortQuestions: class8EnglishShortQuestions, longQuestions: class8EnglishLongQuestions },
       "General Science": { chapters: class8GeneralScienceChapters, mcqs: class8GeneralScienceMCQs, shortQuestions: class8GeneralScienceShortQuestions, longQuestions: class8GeneralScienceLongQuestions },
       "Mathematics": { chapters: class8MathChapters, mcqs: class8MathMCQs, shortQuestions: class8MathShortQuestions, longQuestions: class8MathLongQuestions },
-      "Urdu Grammar": { chapters: class8UrduChapters, mcqs: class8UrduMCQs, shortQuestions: class8UrduShortQuestions, longQuestions: class8UrduLongQuestions },
+      "Urdu": { chapters: class8UrduChapters, mcqs: class8UrduMCQs, shortQuestions: class8UrduShortQuestions, longQuestions: class8UrduLongQuestions },
     },
   },
   "Class 9": {
@@ -238,7 +168,7 @@ export const courses = {
       "English": { chapters: class9EnglishChapters, mcqs: class9EnglishMCQs, shortQuestions: class9EnglishShortQuestions, longQuestions: class9EnglishLongQuestions },
       "Mathematics": { chapters: class9MathChapters, mcqs: class9MathMCQs, shortQuestions: class9MathShortQuestions, longQuestions: class9MathLongQuestions },
       "Physics": { chapters: class9PhysicsChapters, mcqs: class9PhysicsMCQs, shortQuestions: class9PhysicsShortQuestions, longQuestions: class9PhysicsLongQuestions },
-      "Urdu Grammar": { chapters: class9UrduChapters, mcqs: class9UrduMCQs, shortQuestions: class9UrduShortQuestions, longQuestions: class9UrduLongQuestions },
+      "Urdu": { chapters: class9UrduChapters, mcqs: class9UrduMCQs, shortQuestions: class9UrduShortQuestions, longQuestions: class9UrduLongQuestions },
     }
   },
   "Class 10": {
@@ -249,7 +179,7 @@ export const courses = {
       "English": { chapters: class10EnglishChapters, mcqs: class10EnglishMCQs, shortQuestions: class10EnglishShortQuestions, longQuestions: class10EnglishLongQuestions },
       "Mathematics": { chapters: class10MathChapters, mcqs: class10MathMCQs, shortQuestions: class10MathShortQuestions, longQuestions: class10MathLongQuestions },
       "Physics": { chapters: class10PhysicsChapters, mcqs: class10PhysicsMCQs, shortQuestions: class10PhysicsShortQuestions, longQuestions: class10PhysicsLongQuestions },
-      "Urdu Grammar": { chapters: class10UrduChapters, mcqs: class10UrduMCQs, shortQuestions: class10UrduShortQuestions, longQuestions: class10UrduLongQuestions },
+      "Urdu": { chapters: class10UrduChapters, mcqs: class10UrduMCQs, shortQuestions: class10UrduShortQuestions, longQuestions: class10UrduLongQuestions },
     }
   },
   "Class 11": {
@@ -273,7 +203,7 @@ export const courses = {
   },
 };
 
-export type CourseData = typeof courses;
-export type CourseName = keyof CourseData;
+export type CourseName = keyof typeof courses;
 export type SubjectName<T extends CourseName> = keyof CourseData[T]['subjects'];
 export type ChapterName<T extends CourseName, U extends SubjectName<T>> = CourseData[T]['subjects'][U]['chapters'][number];
+export type CourseData = typeof courses;

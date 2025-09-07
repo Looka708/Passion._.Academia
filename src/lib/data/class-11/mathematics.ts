@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './mathematics-short-questions';
+import { longQuestions as longQuestionsData } from './mathematics-long-questions';
+
 
 export const chapters = ["Complex Numbers",
                             "Functions and Graphs",
@@ -7723,4 +7726,15 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "D"
   }
 ],
+};
+export const shortQuestions = {
+    "Sets, Functions and Groups": shortQuestionsData.slice(0, 4),
+    "Matrices and Determinants": shortQuestionsData.slice(4, 7),
+    "Trigonometry": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Sets, Functions and Groups": longQuestionsData.slice(0, 2),
+    "Matrices and Determinants": longQuestionsData.slice(2, 4),
+    "Trigonometry": longQuestionsData.slice(4, 5),
 };

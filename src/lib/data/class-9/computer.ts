@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
 
 export const chapters = [
   "Introduction to Systems",
@@ -6630,4 +6632,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "To make informed decisions based on data."
   }
 ]
+};
+export const shortQuestions = {
+    "Introduction to Computers": shortQuestionsData.slice(0, 3),
+    "Computer Components": shortQuestionsData.slice(3, 6),
+    "Input/Output Devices": shortQuestionsData.slice(6, 8),
+    "Storage Devices": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Introduction to Computers": longQuestionsData.slice(0, 1),
+    "Computer Components": longQuestionsData.slice(1, 2),
+    "Input/Output Devices": longQuestionsData.slice(2, 3),
+    "Storage Devices": longQuestionsData.slice(3, 5),
 };

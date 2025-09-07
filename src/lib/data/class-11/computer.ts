@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './computer-short-questions';
+import { longQuestions as longQuestionsData } from './computer-long-questions';
+
 
 export const chapters = ["Introduction to Software Development", 
                         "Python Programming", 
@@ -4979,4 +4982,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "b"
   }
 ]
+};
+export const shortQuestions = {
+    "Fundamentals of Computer": shortQuestionsData.slice(0, 3),
+    "Number Systems": shortQuestionsData.slice(3, 5),
+    "Logic Gates": shortQuestionsData.slice(5, 7),
+    "Computer Architecture": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Fundamentals of Computer": longQuestionsData.slice(0, 1),
+    "Number Systems": longQuestionsData.slice(1, 2),
+    "Logic Gates": longQuestionsData.slice(2, 3),
+    "Computer Architecture": longQuestionsData.slice(3, 5),
 };

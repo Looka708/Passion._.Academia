@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './urdu-short-questions';
+import { longQuestions as longQuestionsData } from './urdu-long-questions';
 
 export const chapters: string[] = [
   "Urdu Grammar"
@@ -3009,3 +3011,14 @@ export const mcqs: Record<string, MCQ[]> = {
     }
   ],
 }
+export const shortQuestions = {
+    "Tafheem": shortQuestionsData.slice(0, 3),
+    "Kahani Naweesi": shortQuestionsData.slice(3, 6),
+    "Muzakkar Moannas": shortQuestionsData.slice(6, 10),
+};
+
+export const longQuestions = {
+    "Tafheem": longQuestionsData.slice(0, 2),
+    "Kahani Naweesi": longQuestionsData.slice(2, 4),
+    "Muzakkar Moannas": longQuestionsData.slice(4, 5),
+};

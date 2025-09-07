@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './physics-short-questions';
+import { longQuestions as longQuestionsData } from './physics-long-questions';
+
 
 export const chapters = [
   "Physical Quantities and Measurements",
@@ -4861,4 +4864,19 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "Interdisciplinary researchers working together to share knowledge and critique ideas"
   }
 ]
+};
+export const shortQuestions = {
+    "Physical Quantities and Measurement": shortQuestionsData.slice(0, 2),
+    "Kinematics": shortQuestionsData.slice(2, 4),
+    "Dynamics": shortQuestionsData.slice(4, 6),
+    "Turning Effect of Forces": shortQuestionsData.slice(6, 8),
+    "Gravitation": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Physical Quantities and Measurement": longQuestionsData.slice(0, 1),
+    "Kinematics": longQuestionsData.slice(1, 2),
+    "Dynamics": longQuestionsData.slice(2, 3),
+    "Turning Effect of Forces": longQuestionsData.slice(3, 4),
+    "Gravitation": longQuestionsData.slice(4, 5),
 };

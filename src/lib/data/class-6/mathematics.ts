@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './mathematics-short-questions';
+import { longQuestions as longQuestionsData } from './mathematics-long-questions';
+
 
 export const chapters = [
   "Factors and Multiples",
@@ -641,3 +644,14 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What is the primary purpose of studying probability?", "options": ["To guarantee an outcome.", "To understand the likelihood of events happening.", "To prevent random experiments.", "To only calculate impossible events."], "correctAnswer": "To understand the likelihood of events happening." }
   ]
 }
+export const shortQuestions = {
+    "Numbers and Operations": shortQuestionsData.slice(0, 4),
+    "Fractions and Decimals": shortQuestionsData.slice(4, 7),
+    "Basic Geometry": shortQuestionsData.slice(7, 10),
+};
+
+export const longQuestions = {
+    "Numbers and Operations": longQuestionsData.slice(0, 2),
+    "Fractions and Decimals": longQuestionsData.slice(2, 4),
+    "Basic Geometry": longQuestionsData.slice(4, 5),
+};

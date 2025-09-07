@@ -1,5 +1,8 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './biology-short-questions';
+import { longQuestions as longQuestionsData } from './biology-long-questions';
+
 
 export const chapters = [
   "THE SCIENCE OF BIOLOGY",
@@ -4588,4 +4591,17 @@ export const mcqs: Record<string, MCQ[]> = {
     "correctAnswer": "It helps ensure data is relevant and sufficient to answer research questions."
   }
 ]
+};
+export const shortQuestions = {
+    "Introduction to Biology": shortQuestionsData.slice(0, 3),
+    "Solving a Biological Problem": shortQuestionsData.slice(3, 6),
+    "Biodiversity": shortQuestionsData.slice(6, 8),
+    "Cells and Tissues": shortQuestionsData.slice(8, 10),
+};
+
+export const longQuestions = {
+    "Introduction to Biology": longQuestionsData.slice(0, 1),
+    "Solving a Biological Problem": longQuestionsData.slice(1, 2),
+    "Biodiversity": longQuestionsData.slice(2, 3),
+    "Cells and Tissues": longQuestionsData.slice(3, 5),
 };

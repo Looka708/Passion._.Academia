@@ -1,5 +1,7 @@
 
 import { MCQ } from '@/lib/types';
+import { shortQuestions as shortQuestionsData } from './english-short-questions';
+import { longQuestions as longQuestionsData } from './english-long-questions';
 
 export const chapters: string[] = [
     "The Last Sermon of Rasoolullah",
@@ -642,3 +644,15 @@ export const mcqs: Record<string, MCQ[]> = {
     { "id": 50, "questionText": "What type of exercise is provided for \"Writing Skills\" in Unit 12?", "options": ["Writing a report.", "Writing an argumentative essay.", "Writing a dialogue between a salesman and a customer about buying a mobile phone.", "Writing a summary of a text."], "correctAnswer": "Writing a dialogue between a salesman and a customer about buying a mobile phone." }
   ]
 }
+
+export const shortQuestions = {
+    "Reading Comprehension": shortQuestionsData.slice(0, 3),
+    "Grammar: Tenses": shortQuestionsData.slice(3, 6),
+    "Vocabulary Building": shortQuestionsData.slice(6, 10),
+};
+
+export const longQuestions = {
+    "Reading Comprehension": longQuestionsData.slice(0, 2),
+    "Grammar: Tenses": longQuestionsData.slice(2, 4),
+    "Vocabulary Building": longQuestionsData.slice(4, 5),
+};
