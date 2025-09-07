@@ -19,9 +19,9 @@ type GeneratedExam = {
 };
 
 export default function ExamGeneratorPage() {
-  const [selectedCourse, setSelectedCourse] = useState<CourseName | null>(null);
-  const [selectedSubject, setSelectedSubject] = useState<SubjectName<any> | null>(null);
-  const [selectedChapter, setSelectedChapter] = useState<ChapterName<any, any> | null>(null);
+  const [selectedCourse, setSelectedCourse] = useState<CourseName | "">("");
+  const [selectedSubject, setSelectedSubject] = useState<string>("");
+  const [selectedChapter, setSelectedChapter] = useState<string>("");
 
   const [numMcqs, setNumMcqs] = useState(10);
   const [numShortQuestions, setNumShortQuestions] = useState(5);
@@ -31,45 +31,39 @@ export default function ExamGeneratorPage() {
   const [generatedExam, setGeneratedExam] = useState<GeneratedExam | null>(null);
 
   const handleCourseChange = (value: string) => {
-    const course = value as CourseName;
-    setSelectedCourse(course);
-    setSelectedSubject(null);
-    setSelectedChapter(null);
+    setSelectedCourse(value as CourseName);
+    setSelectedSubject("");
+    setSelectedChapter("");
     setGeneratedExam(null);
   };
 
   const handleSubjectChange = (value: string) => {
-    const subject = value as SubjectName<any>;
-    setSelectedSubject(subject);
-    setSelectedChapter(null);
+    setSelectedSubject(value);
+    setSelectedChapter("");
     setGeneratedExam(null);
   };
   
   const handleChapterChange = (value: string) => {
-    const chapter = value as ChapterName<any,any>;
-    setSelectedChapter(chapter);
+    setSelectedChapter(value);
     setGeneratedExam(null);
   };
 
   const getAvailableMcqs = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-    const subjectData = courses[selectedCourse]?.subjects[selectedSubject];
-    return subjectData?.mcqs[selectedChapter] || [];
+    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
+    return subjectData?.mcqs[selectedChapter as keyof typeof subjectData.mcqs] || [];
   };
 
   const getAvailableShortQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-     const subjectData = courses[selectedCourse]?.subjects[selectedSubject];
-    // Assuming short questions are also keyed by chapter like MCQs.
-    // If they are just an array per subject, this needs adjustment.
-    return subjectData?.shortQuestions[selectedChapter] || [];
+    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
+    return subjectData?.shortQuestions[selectedChapter as keyof typeof subjectData.shortQuestions] || [];
   };
 
   const getAvailableLongQuestions = () => {
     if (!selectedCourse || !selectedSubject || !selectedChapter) return [];
-     const subjectData = courses[selectedCourse]?.subjects[selectedSubject];
-    // Assuming long questions are also keyed by chapter.
-    return subjectData?.longQuestions[selectedChapter] || [];
+    const subjectData = courses[selectedCourse as CourseName]?.subjects[selectedSubject as SubjectName<CourseName>];
+    return subjectData?.longQuestions[selectedChapter as keyof typeof subjectData.longQuestions] || [];
   };
 
   const handleGenerateExam = () => {
@@ -101,7 +95,7 @@ export default function ExamGeneratorPage() {
     if (printableContent) {
         const printWindow = window.open('', '', 'height=800,width=800');
         printWindow?.document.write('<html><head><title>Print Exam</title>');
-        printWindow?.document.write('<style> body { font-family: sans-serif; } .question-section { page-break-inside: avoid; } .question { margin-bottom: 0.75rem; page-break-inside: avoid; } .options { margin-left: 1.5rem; } .option { margin-bottom: 0.25rem; } h1, h2, h3 { margin-bottom: 1.5rem; text-align: center; } h1 { font-size: 1.5rem; } h2 { font-size: 1.25rem; } h3 { font-size: 1.1rem; text-align: left; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; } ol, ul { padding-left: 1.5rem; } li { margin-bottom: 0.5rem; } .mcq-list { list-style-type: decimal; padding-left: 1.5rem; columns: 2; -webkit-columns: 2; -moz-columns: 2; column-gap: 2rem; } .mcq-list li { page-break-inside: avoid; } @media print { body { -webkit-print-color-adjust: exact; } .mcq-list { columns: 2; -webkit-columns: 2; -moz-columns: 2; } } </style>');
+        printWindow?.document.write('<style> body { font-family: sans-serif; } .question-section { page-break-inside: avoid; } .question { margin-bottom: 0.5rem; page-break-inside: avoid; } .options { margin-left: 1.5rem; } .option { margin-bottom: 0.25rem; } h1, h2, h3 { margin-bottom: 1.5rem; text-align: center; } h1 { font-size: 1.5rem; } h2 { font-size: 1.25rem; } h3 { font-size: 1.1rem; text-align: left; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; } ol, ul { padding-left: 1.5rem; } li { margin-bottom: 0.5rem; } .mcq-list { list-style-type: decimal; padding-left: 1.5rem; columns: 2; -webkit-columns: 2; -moz-columns: 2; column-gap: 2rem; } .mcq-list li { margin-bottom: 0.25rem; page-break-inside: avoid; } @media print { body { -webkit-print-color-adjust: exact; } .mcq-list { columns: 2; -webkit-columns: 2; -moz-columns: 2; } } </style>');
         printWindow?.document.write('</head><body>');
         printWindow?.document.write(printableContent);
         printWindow?.document.write('</body></html>');
@@ -125,7 +119,7 @@ export default function ExamGeneratorPage() {
             <CardContent className="grid gap-6 md:grid-cols-2">
               <div className="space-y-4">
                 <Label>Course</Label>
-                 <Select onValueChange={handleCourseChange} >
+                 <Select onValueChange={handleCourseChange} value={selectedCourse}>
                     <SelectTrigger>
                         <SelectValue placeholder="Select a Course" />
                     </SelectTrigger>
@@ -140,12 +134,12 @@ export default function ExamGeneratorPage() {
               {selectedCourse && (
                  <div className="space-y-4">
                     <Label>Subject</Label>
-                    <Select onValueChange={handleSubjectChange} disabled={!selectedCourse}>
+                    <Select onValueChange={handleSubjectChange} value={selectedSubject} disabled={!selectedCourse}>
                         <SelectTrigger>
                             <SelectValue placeholder="Select a Subject" />
                         </SelectTrigger>
                         <SelectContent>
-                             {Object.keys(courses[selectedCourse].subjects).map(subject => (
+                             {Object.keys(courses[selectedCourse as CourseName].subjects).map(subject => (
                                 <SelectItem key={subject} value={subject}>{subject}</SelectItem>
                             ))}
                         </SelectContent>
@@ -156,12 +150,12 @@ export default function ExamGeneratorPage() {
               {selectedSubject && (
                  <div className="space-y-4">
                     <Label>Chapter</Label>
-                    <Select onValueChange={handleChapterChange} disabled={!selectedSubject}>
+                    <Select onValueChange={handleChapterChange} value={selectedChapter} disabled={!selectedSubject}>
                         <SelectTrigger>
                             <SelectValue placeholder="Select a Chapter" />
                         </SelectTrigger>
                         <SelectContent>
-                            {courses[selectedCourse!].subjects[selectedSubject].chapters.map(chapter => (
+                            {courses[selectedCourse as CourseName].subjects[selectedSubject as SubjectName<CourseName>].chapters.map(chapter => (
                                 <SelectItem key={chapter} value={chapter}>{chapter}</SelectItem>
                             ))}
                         </SelectContent>
